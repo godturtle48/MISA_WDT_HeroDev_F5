@@ -23,6 +23,10 @@ $('.nav-menu').click(function() {
 		$('.catalog-application-catalog').css('left','24px');
 		$('.setting-dialog').css('width','28.5%');
 		$('.nav-menu').css('box-shadow','7px -2px 36px -5px #003f7f');
+
+		// list-nav
+		$('.list-nav').css('width','41px');
+		//
 	}else{
 		$('.nav-logo').toggle(1);
 		$('.search-box').css('min-width','300px');
@@ -31,6 +35,10 @@ $('.nav-menu').click(function() {
 		$('.catalog-application-catalog').css('left','206px');
 		$('.setting-dialog').css('width','22%');
 		$('.nav-menu').css('box-shadow','0 0 0 0');
+
+		// list-nav
+		$('.list-nav').css('width','231px');
+		//
 	}
 	check++;
 	console.log(check);

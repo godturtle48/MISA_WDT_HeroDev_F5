@@ -4,6 +4,9 @@
 	font-size: 13px;
 	font-family: Helvetica,Tahoma,Arial,sans-serif;
 }
+body{
+	overflow: hidden;
+}
 
 
 .nav-bar{
@@ -151,9 +154,7 @@
 						padding-left: 10px;
 						padding-top: 20px;
 					}
-					.nav-bar .nav-left .nav-search .search-box .setting-dialog .setting-dialog-checkbox input:hover{
-						
-					}
+					
 	
 	.nav-bar .nav-panel-l-r{
 		width: 20%;
@@ -253,3 +254,18 @@
 				.nav-bar .nav-right .r-user-profile div:hover{
 					background-color: #dbdbdb;
 				}
+
+.list-nav{
+	width: 231px;
+	top: 50px;
+	height: 600px;
+	background-color: #0277bd;
+	float: left;
+}
+.content{
+	position: static;
+	left: 231px;
+	background-color: #ccc;
+	width: 100%;
+	height: 600px;
+}
