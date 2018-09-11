@@ -1,0 +1,7 @@
+E:\MISA.TeamUET\MISA.TeamUET\bin\MISA.TeamUET.dll.config
+E:\MISA.TeamUET\MISA.TeamUET\bin\MISA.TeamUET.dll
+E:\MISA.TeamUET\MISA.TeamUET\bin\MISA.TeamUET.pdb
+E:\MISA.TeamUET\MISA.TeamUET\obj\Debug\MISA.TeamUET.csprojAssemblyReference.cache
+E:\MISA.TeamUET\MISA.TeamUET\obj\Debug\MISA.TeamUET.csproj.CoreCompileInputs.cache
+E:\MISA.TeamUET\MISA.TeamUET\obj\Debug\MISA.TeamUET.dll
+E:\MISA.TeamUET\MISA.TeamUET\obj\Debug\MISA.TeamUET.pdb
