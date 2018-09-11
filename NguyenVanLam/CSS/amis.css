@@ -1,0 +1,33 @@
+﻿body {
+}
+
+
+.box-content {
+
+}
+
+    .box-content .building-alert {
+        position: absolute;
+        width: calc(100vw - 230px);
+        left: 0px;
+        top: 0px;
+        padding: 10px;
+        background-color: #ecf0f2;
+        height: calc(100vh - 85px);
+        min-height: 340px;
+    }
+
+        .box-content .building-alert .building-content {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border: 1px solid #bfbfbf;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+            .box-content .building-alert .building-content .main-buiding-content {
+                text-align: center;
+            }
