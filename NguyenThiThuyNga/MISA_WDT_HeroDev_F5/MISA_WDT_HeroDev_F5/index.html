@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="CSS/index.css" rel="stylesheet" />
+</head>
+<body>
+ 
+<!--Quản lí thời gian-->
+    <div class="time-management-sub-menu  type1-sub-menu">
+        <a class="sub-menu-item" >Quản lý nghỉ</a>
+        <a class="sub-menu-item" >Quản lý làm thêm</a>
+        <a class="sub-menu-item" >Quản lý đi muộn, về sớm</a>
+        <a class="sub-menu-item" >Quản lý làm bù</a>
+        <a class="sub-menu-item" >Bảng tổng hợp nghỉ phép</a>
+    </div>
+
+ <!--Chấm công-->
+    <div class="time-sheet-sub-menu  type1-sub-menu">
+        <a class="sub-menu-item" >Chấm công chi tiết theo thời gian</a>
+        <a class="sub-menu-item" >Chấm công tổng hợp theo thời gian</a>
+    </div>
+
+<!--Lương-->
+    <div class="salary-sub-menu  type1-sub-menu">
+        <a class="sub-menu-item">Bảng lương</a>
+        <a class="sub-menu-item">Bảng tổng hợp công nợ</a>
+        <a class="sub-menu-item">Bảng chi trả tiền lương</a>
+        <a class="sub-menu-item">Bảng tạm ghi nợ nhân viên</a>
+        <a class="sub-menu-item">Bảng tổng hợp ghi nợ nhân viên</a>
+        <a class="sub-menu-item">Bảng thu nhập khác</a>
+        <a class="sub-menu-item">Bảng khấu trừ khác</a>
+    </div>
+
+<!--Thuế-->
+    <div class="tax-sub-menu  type1-sub-menu">
+        <a class="sub-menu-item">Tạm tính thuế</a>
+        <a class="sub-menu-item">Quyết toán thuế</a>
+        <a class="sub-menu-item">Tờ khai quyết toán thuế</a>
+        <a class="sub-menu-item">Tờ khai đăng ký mã số thuế TNCN</a>
+        <a class="sub-menu-item">Bảng kê khai đăng ký người phụ thuộc giảm trừ gia cảnh</a>
+    </div>
+
+<!--Bảo hiểm-->
+    <div class="insure-sub-menu  type1-sub-menu">
+        <a class="sub-menu-item">Đợt bảo hiểm</a>
+        <a class="sub-menu-item">Thanh toán bảo hiểm</a>
+        <a class="sub-menu-item">Hồ sơ bảo hiểm</a>
+    </div>
+
+<!--Tuyển dụng-->
+    <div class="recruit-sub-menu  type1-sub-menu">
+        <a class="sub-menu-item">Kế hoạch tuyển dụng</a>
+        <a class="sub-menu-item">Đợt tuyển dụng</a>
+        <a class="sub-menu-item">Nguồn dự trữ</a>
+        <a class="sub-menu-item">Hồ sơ lai vãng</a>
+    </div>
+
+<!--Tiếp nhận--> 
+    <div class="trainning-sub-menu  type1-sub-menu">
+        <a class="sub-menu-item">Tổng hợp nhu cầu đào tạo</a>
+        <a class="sub-menu-item">Kế hoạch đào tạo</a>
+        <a class="sub-menu-item">Khóa đào tạo</a>
+    </div>
+
+<!--Báo cáo-->
+    <div class="report-sub-menu  type2-sub-menu">
+        <!--Cột trái-->
+        <div class="column1-sub-menu">
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Hồ sơ nhân viên</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Hồ sơ</div>
+                </a>
+                <a class="child-item  inline">                   
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Hợp đồng</div>
+                </a>
+            </div>
+
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Lương-Thuế-Bảo hiểm</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Quản lí thời gian</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content" id="customer">Chấm công</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Tiền lương</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Thuế</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Bảo hiểm</div>
+                </a>
+            </div>
+
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Tuyển dụng-Tiếp nhận</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Tuyển dụng</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Tiếp nhận</div>
+                </a>
+            </div>
+        </div>
+        <!--Cột phải-->
+        <div class="column2-sub-menu">
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Khen thưởng - Sự cố  </div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Khen thưởng</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content" id="customer">Sự cố</div>
+                </a>
+            </div>
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Đánh giá - Đào tạo - Phúc lợi</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Đánh giá</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Đào tạo</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Phúc lợi</div>
+                </a>
+            </div>
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Thủ tục</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Công tác</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Đồng phục và bảo hộ lao động</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Thôi việc</div>
+                </a>
+            </div>
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Hồ sơ năng lực</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Hồ sơ năng lực</div>
+                </a>
+            </div>            
+        </div>
+    </div>
+
+    <!--Danh mục-->
+    <div class="list-sub-menu  type2-sub-menu">
+        <div class="column1-sub-menu">
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Công việc</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Cơ cấu tổ chức</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Vị trí công việc</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Vai trò công việc</div>
+                </a>
+            </div>
+
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Lương</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Khoản lương</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content" id="customer">Lí do nghỉ</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Ký hiệu chấm công</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Ca làm việc</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Sản phẩm</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Ngạch bậc lương</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Biểu tính thuế thu nhập</div>
+                </a>
+            </div>
+        </div>
+        <div class="column2-sub-menu">
+            <div class="item-sub-menu">
+                <div class="title-list-sub-menu">Khác</div>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Nhà cung cấp</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content" id="customer">Đồng phục và bảo hộ lao động</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Cấp độ</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Kỹ năng</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Tiêu chí đánh giá</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Thủ tục</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="child-content">Nơi đăng ký khám chữa bệnh</div>
+                </a>
+                <a class="child-item  inline">
+                    <div class="child-node">
+                        <div class="line1-last"></div>
+                        <div class="line2-last"></div>
+                    </div>
+                    <div class="child-content">Thiết lập mẫu trộn</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Hệ thống-->
+    <div class="system-sub-menu  type3-sub-menu">
+        <div class="sub-menu-itemsystem">
+            <div id="label-language">Ngôn ngữ</div>
+            <div id="language-sub-menu-box" class="inline">
+                <div id="vietnam-flag"></div>
+                <div id="lable-language-submenu-box">Tiếng Việt</div>
+                <div id="arr-down-black"></div>
+            </div>
+        </div>       
+        <a class="sub-menu-itemsystem">Quản lý người dùng</a>
+        <a class="sub-menu-itemsystem">Vai trò và quyền hạn</a>
+        <a class="sub-menu-itemsystem">Nhật kí truy cập</a>
+        <a class="sub-menu-itemsystem">Thiết lập giá trị ngầm định</a>
+        <div class="sub-menu-itemsystem  general-setting">
+            <div>Thiết lập chung</div>
+            <a class="child-item  inline">
+                <div class="child-node">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <div class="child-content">Chọn người dùng quản lý thười gian</div>
+            </a>
+            <a class="child-item  inline">
+                <div class="child-node">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <div class="child-content">Thiết lập ca làm việc</div>
+            </a>
+            <a class="child-item  inline">
+                <div class="child-node">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <div class="child-content">Thiết lập ngày nghỉ</div>
+            </a>
+            <a class="child-item  inline">
+                <div class="child-node">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <div class="child-content">Thiết lập số công chuẩn</div>
+            </a>
+            <a class="child-item  inline">
+                <div class="child-node">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <div class="child-content">Thiết lập số kì lương trong tháng</div>
+            </a>
+            <a class="child-item  inline">
+                <div class="child-node">
+                    <div class="line1-last"></div>
+                    <div class="line2-last"></div>
+                </div>
+                <div class="child-content">Chọn người dùng quản lý đi công tác</div>
+            </a>
+        </div>
+        <a class="sub-menu-itemsystem">Thiết lập bắt buộc nhập liệu...</a>
+        <a class="sub-menu-itemsystem">Tùy chọn</a>
+        <!--<div class="sub-menu-itemsystem"></div>-->
+    </div>
+</body>
+</html>
