@@ -163,7 +163,8 @@ body{
 		width: 24.2%;
 	}
 	.nav-bar .nav-right{
-		float: right;
+		position: absolute;
+		right: 10px;
 	}
 		.nav-bar .nav-right .r-version{
 			width: 190px;
