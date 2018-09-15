@@ -28,6 +28,7 @@ $('#icon-left-header').click(function () {
 $('.menu-li, .menu-li-ul-li').click(function () {
     $('.menu-li, .menu-li-ul-li').removeAttr('style');
     $(this).css("background-color", "#EDA235");
+
 });
 
 $('.menu-left').click(function () {
@@ -35,6 +36,7 @@ $('.menu-left').click(function () {
     $('.main').removeClass('main-left-30px');
 }); 
 
+//thay doi chieu mui ten cua 1 danh muc khi tat/bat
 $('.menu-li-dropdown').click(function () {
     if ($(this).attr('status') !== 'show') {
         $('.menu-li-dropdown').filter('[status=show]').find('span').removeClass("icon-menu-dropup");
@@ -53,8 +55,20 @@ $('.menu-li-dropdown').click(function () {
         $(this).find('span').removeClass("icon-menu-dropup");
         $(this).find('span').addClass("icon-menu-dropdown");
     }
+    $('.time-management-sub-menu').hide();
+    $('.time-sheet-sub-menu').hide();
+    $('.salary-sub-menu').hide();
+    $('.tax-sub-menu').hide();
+    $('.insure-sub-menu').hide();
+    $('.recruit-sub-menu').hide();
+    $('.training-sub-menu').hide();
+    $('.report-sub-menu').hide();
+    $('.list-sub-menu').hide();
+    $('.system-sub-menu').hide();
 });
 
+
+//hien thi trang dang duoc nang cap
 $('#desk-item').click(function () {
     $('.building-alert').show();
 })
@@ -75,31 +89,31 @@ $('#email-history-item').click(function () {
     $('.building-alert').show();
 })
 
-$('#desk-item').click(function () {
+$('.contract-item').click(function () {
     $('.building-alert').show();
 })
 
-$('#desk-item').click(function () {
+$('.self-update-item').click(function () {
     $('.building-alert').show();
 })
 
-$('#desk-item').click(function () {
+$('.receive-item').click(function () {
     $('.building-alert').show();
 })
 
-$('#desk-item').click(function () {
+$('.grant-item').click(function () {
     $('.building-alert').show();
 })
 
-$('#desk-item').click(function () {
+$('.error-item').click(function () {
     $('.building-alert').show();
 })
 
-$('#desk-item').click(function () {
+$('.review-item').click(function () {
     $('.building-alert').show();
 })
 
-$('#desk-item').click(function () {
+$('.welfare-item').click(function () {
     $('.building-alert').show();
 })
 
@@ -232,4 +246,8 @@ $('.system').click(function () {
     $('.training-sub-menu').hide();
     $('.report-sub-menu').hide();
     $('.list-sub-menu').hide();
+})
+
+$('#profile-item').click(function () {
+    $('.building-alert').hide();
 })
