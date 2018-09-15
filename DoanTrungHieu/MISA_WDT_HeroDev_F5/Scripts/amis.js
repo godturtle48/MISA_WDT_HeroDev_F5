@@ -26,3 +26,4 @@ $('.r-ring').mouseleave(function() {
 	$('.r-ring').children('img').remove();
 	$('.r-ring').append('<img src="Contents/Images/notification.png">');	
 });
+
