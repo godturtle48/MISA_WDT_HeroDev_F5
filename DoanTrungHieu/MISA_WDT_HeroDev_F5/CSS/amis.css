@@ -260,17 +260,5 @@ body{
 					background-color: #dbdbdb;
 				}
 
-.list-nav{
-	width: 231px;
-	top: 50px;
-	height: 600px;
-	background-color: #0277bd;
-	float: left;
-}
-.content{
-	position: static;
-	left: 231px;
-	background-color: #ccc;
-	width: 100%;
-	height: 600px;
-}
+
+
