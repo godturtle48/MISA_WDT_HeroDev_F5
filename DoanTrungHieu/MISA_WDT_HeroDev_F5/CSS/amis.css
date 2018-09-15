@@ -38,6 +38,7 @@ body{
 	.nav-bar .nav-left{
 		float: left;
 		display: flex;
+		border-left: 1px solid RGBA(0,0,0,.2);
 	}
 		.nav-bar .nav-left .catalog-application{
 			height: 50px;
@@ -62,7 +63,7 @@ body{
 				position: absolute;
 				width: 360px;
 				top: 46px;
-				left: 206px;
+				left: -22px;
 				z-index: 999;
 				box-shadow: 6px 7px 8px -4px #ccc;
 				border-radius: 4px;
@@ -123,9 +124,11 @@ body{
 					border: none;
 					width: 74%;
 					font-size: 13px;
+					color: #fff;
+					padding-top: 6px;
+					outline: none;
 				}
-					.nav-bar .nav-left .nav-search .search-box input[placeholder]{
-						padding-top: 6px;
+					.nav-bar .nav-left .nav-search .search-box ::placeholder{
 						color: #fff;
 					}
 				.nav-bar .nav-left .nav-search .search-box .setting-search{
@@ -137,7 +140,7 @@ body{
 				}
 				.nav-bar .nav-left .nav-search .search-box .setting-dialog{
 					position: absolute;
-					width: 22.2%;
+					width: 26.8%;
 					min-width: 200px;
 					margin-top: 35px;
 					background-color: #fff;
@@ -157,10 +160,11 @@ body{
 					
 	
 	.nav-bar .nav-panel-l-r{
-		width: 20%;
+		width: 24.2%;
 	}
 	.nav-bar .nav-right{
-		float: right;
+		position: absolute;
+		right: 10px;
 	}
 		.nav-bar .nav-right .r-version{
 			width: 190px;
@@ -197,6 +201,7 @@ body{
 			display: flex;
 			color: #fff;
 			cursor: pointer;
+			min-width: 120px;
 		}
 			
 			.nav-bar .nav-right .r-user .r-user-img{

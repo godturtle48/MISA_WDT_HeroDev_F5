@@ -1,0 +1,279 @@
+﻿#employee-general-info {
+    height: 250px;
+    margin: 0px;
+    width: calc(100% - 230px);
+    min-width:780px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    border:1px solid #808080;
+    box-shadow:3px 3px 3px #808080;
+}
+#employee-general-info-toolbar {
+    right: auto;
+    left: 0px;
+    top: 0px;
+    border-bottom: 1px solid #808080;
+}
+#employee-info-toolbar-item1 {
+    color: #238DE6;
+    border-bottom: 3px solid #238DE6;
+}
+.employee-info-toolbar-item{
+    
+}
+.employee-info-toolbar-item:hover {
+    cursor: pointer;
+    color: #238DE6;
+}
+#employee-general-info-detail {
+    height: 212px;
+    width: 100%;
+    left: 0px;
+    top: 36px;
+}
+.employee-info-toolbar-item{
+
+}
+#employee-info-img {
+    padding: 5px;
+    height: 212px;
+    margin-top: -10px;
+    display: inline-block;
+    position: relative;
+    top: -45px;
+}
+
+.employee-info-inline{
+    display:inline-block;
+    align-items:center;
+}
+#employee-info-left-icon {
+    background-image: url('../Images/tab-arr-left-disable.png');
+    height:20px;
+    width:20px;
+    background-repeat:no-repeat;
+    background-position: 5px 0px;
+}
+#employee-info-right-icon {
+    background-image: url('../Images/tab-arr-right.png');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 0px;
+}
+
+#show-info-toolbar-icon {
+    background-image: url('../Images/quick-link.png');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+}
+#setting-toolbar-info-detail-icon {
+    background-image: url('../Images/setting.png');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px -1px;
+}
+#show-info-toolbar-detail {
+    display:none;
+    background: #ffffff;
+    font-size: 13px;
+    width: 570px;
+    box-shadow: 2px 5px 5px #888888;
+    position:absolute;
+    top:-338px;
+    right:3px;
+}
+#show-info-left-col{
+    width:246px;
+}
+#show-info-right-col {
+    position: relative;
+    top: -17px;
+}
+.show-info-toolbar-detail-Litem2{
+    line-height:24px;
+}
+#employee-info-table1 {
+    text-align: left;
+    font-weight: normal;
+}
+
+.employee-info-table-col1 {
+    max-width: 94px;
+    font-weight: normal;
+    line-height: 26px;
+    height:26px;
+    font-size:13px;
+}
+.employee-info-table-col2 {
+    max-width: 250px;
+    min-width: 219px;
+    line-height: 26px;
+    height: 26px;
+    font-size: 13px;
+}
+.employee-info-table-col3 {
+    width: 134px;
+    font-weight: normal;
+    line-height: 26px;
+    height: 26px;
+    font-size: 13px;
+}
+.employee-info-table-col4 {
+    min-width: 173px;
+    line-height: 26px;
+    height: 26px;
+    font-size: 13px;
+}
+#employee-info-table2 {
+    position:relative;
+    float: right;
+    margin-top: 0px;
+    text-align: left;
+    
+}
+#cmnd-employee-info {
+    max-width: 94px;
+    font-weight: normal;
+    height: 26px;
+    font-size: 13px;
+}
+#menu-employee-info-detail{
+    overflow-x:hidden;
+    width:calc(100% - 100px);
+}
+.employee-info-toolbar-item{
+    width:200px;
+}
+#setting-toolbar-info-detail-content {
+    display:none;
+    width: 600px;
+    height: 400px;
+    right: auto;
+    box-shadow: 1px 5px 5px #151414;
+    z-index: 19000;
+    position: absolute;
+    top: calc(50% - 350px);
+    left: calc(50% - 400px);
+    background:white;
+}
+#setting-toolbar-info-detail-content th{
+    height:32px;
+}
+#setting-toolbar-info-detail-body{
+    width:530px;
+    padding:10px;
+    background:white;
+}
+#setting-toolbar-info-detail-lines {
+    height: 275px;
+    overflow-y: scroll;
+}
+.setting-toolbar-info-detail-col2{
+    width:600px;
+    text-align:left;
+    font-weight:normal;
+}
+table {
+    border-collapse: collapse;
+}
+.employee-info-box{
+    border:1px solid #808080;
+}
+#setting-toolbar-info-detail-header {
+    position:relative;
+    margin-top:-16px;
+    background: #0F84E4;
+    height:32px;
+    color:#ffffff;
+    padding-left:20px;
+    line-height:32px;
+
+}
+#setting-toolbar-info-detail-closeBt {
+    position:relative;
+    top:-40px;
+    left:550px;
+    background-image: url('../Images/window-close16.png');
+    height:32px;
+    width:30px;
+    background-repeat:no-repeat;
+}
+#setting-toolbar-info-detail-upBT {
+    position: relative;
+    top: -235px;
+    border: 1px solid #808080;
+    display: block;
+    background-image: url('../Images/up16.png');
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 30px;
+    background-position: 7px 8px;
+}
+#setting-toolbar-info-detail-downBT {
+    position: relative;
+    top: -230px;
+    border: 1px solid #808080;
+    display: block;
+    background-image: url('../Images/down16.png');
+    background-repeat: no-repeat;
+    height: 36px;
+    background-position: 7px 8px;
+    width: 30px;
+}
+.setting-toolbar-info-detail-BT:hover {
+    cursor: pointer;
+    background: #E2F1E9;
+}
+#setting-toolbar-info-help-BT {
+    border: 1px solid #808080;
+    background-image: url('../Images/question16.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    background-position: 7px 8px;
+    width: 45px;
+    padding-left:30px;
+    margin-left:10px;
+    line-height:30px;
+}
+#setting-toolbar-info-detail-leftBT{
+    background:#ffffff;
+}
+#setting-toolbar-info-BT1 {
+    border: 1px solid #808080;
+    height: 30px;
+    width: 75px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 30px;
+}
+#setting-toolbar-info-BT2 {
+    background-image: url('../Images/select16.png');
+    border: 1px solid #808080;
+    height: 30px;
+    width: 53px;
+    padding-left: 30px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 30px;
+    background-repeat: no-repeat;
+    background-position: 7px 8px;
+}
+#setting-toolbar-info-BT3 {
+    width: 53px;
+    padding-left: 30px;
+    background-image: url('../Images/close16.png');
+    border: 1px solid #808080;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right:15px;
+    line-height: 30px;
+    width: 53px;
+    background-repeat: no-repeat;
+    background-position: 7px 8px;
+}

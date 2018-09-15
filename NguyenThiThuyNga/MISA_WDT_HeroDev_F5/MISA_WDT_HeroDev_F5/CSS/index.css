@@ -1,0 +1,159 @@
+﻿body {
+    font-family: Helvetica,Tahoma,Arial,sans-serif !important;
+    font-size: 13px;
+}
+.type1-sub-menu, .type2-sub-menu, .type3-sub-menu {
+    /*Khung ngoài cùng của các menu*/
+    position: fixed;
+    left: 230px;
+    top: 50px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    z-index: 18000;
+    min-width: 280px;
+    background-color: #fff;
+    box-shadow: 1px 0 3px #b0b0b0;
+    display: none;
+}
+/*.type3-sub-menu {
+    display: block;
+}*/
+.type1-sub-menu .sub-menu-item {
+    /*các dòng trong menu loại 1*/
+    color: #000;
+    cursor: pointer;
+    line-height: 34px;
+    text-decoration: none;
+    display: block;
+    border-bottom: none;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: none;
+}
+    .type1-sub-menu .sub-menu-item:hover {
+        background-color: #eda235;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .type1-sub-menu .sub-menu-item:active {
+        color: #000;
+    }
+
+.inline{
+    display:flex;
+}
+
+.type2-sub-menu .column1-sub-menu, .column2-sub-menu {
+    /*từng cột trong menu loại 2*/
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top;
+    min-width: 220px;
+}
+.item-sub-menu{
+    /*từng dòng menu loại 2*/
+    padding:4px;
+    margin-left:6px;
+}
+
+.title-list-sub-menu {
+    /*tiêu đề từng item*/
+    line-height: 32px;
+    color: #0072bb;
+    color: #0072bb;
+    margin-bottom: 4px;
+}
+.child-item {
+    /*từng dòng trong menu loại 2*/
+    line-height: 34px;
+    cursor: pointer;
+}
+.child-content {
+    /*nội dung từng lựa chọn trong menu loại 2*/
+    width: 100%;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+    .child-content:hover {
+        background-color: #eda235;
+        color: #fff;
+    }
+
+    /*vẽ các node trước nội dung từng dòng*/
+    .child-item .child-node {        
+        width: 10px;
+        float: left;
+    }
+        .child-item .child-node .line1 {
+            height: 34px;
+            width: 1px;
+            border-left: 1px solid #dadada;
+        }
+        .child-item .child-node .line1-last {
+            height: 17px;
+            width: 1px;
+            border-left: 1px solid #dadada;
+        }
+
+        .child-item .child-node .line2 {
+            height: 1px;
+            width: 15px;
+            border-top: 1px solid #dadada;
+            margin-top: -17px;
+        }
+
+        .child-item .child-node .line2-last {
+            height: 1px;
+            width: 15px;
+            border-top: 1px solid #dadada;
+            margin-top: 0px;
+        }
+
+
+.sub-menu-itemsystem {
+    color: #000;
+    cursor: pointer;
+    line-height: 34px;
+    text-decoration: none;
+    display: block;
+    border-bottom: none;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.general-setting {
+    background-color: #eceff1 ;
+}
+#language-sub-menu-box {
+    border: 1px solid #b0bec5;
+    width: 237px;
+}
+#vietnam-flag {
+    background-image: url('../Contents/Images/vietnam24.png');
+    background-repeat: no-repeat;
+    height:16px;
+    width:30px;
+    margin-left:10px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+#lable-language-submenu-box {
+    
+}
+#arr-down-black {
+    background-image: url('../Contents/Images/arr-down-black.png');
+    background-repeat: no-repeat;
+    height:20px;
+    width:20px;
+    margin:auto 3px auto auto;
+}
+
+.system-sub-menu a:hover {
+    background-color: #eda235;
+    color: #fff;
+
+}
