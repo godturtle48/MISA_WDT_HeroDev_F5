@@ -1,5 +1,5 @@
 ﻿#info-all-employee-tuan-anh{
-    margin-left: 230px;
+    margin-left: 230px;             /*dieu chinh le trai de tuy chinh chieu rong*/
     padding: 10px;
     position: relative;
     top: 0px;                       /*phan chinh co gian cua t bi loi nen phai chinh position o top voi left o day*/
@@ -7,24 +7,29 @@
     background: #ECF0F2;
     font-size: 13px;
 }
+.info-all-employee-tuan-anh-pointer:hover{
+    cursor: pointer;
+}
+#table-info-all-employees .tuan-anh-pointer:hover{
+
+    background: #E7F4FF;
+}
 #employee-general-info {
     background: white;
-    height: 250px;
+    height: 248px;
     margin: 0px;
-    width: -webkit-fill-available;
     min-width:780px;
     position: relative;
+    top: 0px;
     border:1px solid #CFCFCF;
     box-shadow:3px 3px 3px #CFCFCF;
+
 }
-.employee-info-tablecell{
-    display: table-cell;
-}
+
 #table-info-all-employees input{
-    width: -webkit-fill-available;
 }
 .table-info-all-employees-bold{
-    font-size: bold;
+    font-weight: bold;
 }
 #table-info-all-employees th{
     font-weight: normal;
@@ -32,6 +37,7 @@
 #table-info-all-employees .table-info-all-employees-bold th{
     font-weight: bold;
 }
+
 
 
 .employee-info-noborder{
@@ -59,6 +65,7 @@
 .employee-info-toolbar-item:hover {
     cursor: pointer;
     color: #238DE6;
+    font-weight: bold;
 }
 #employee-general-info-detail {
     height: 212px;
@@ -75,7 +82,7 @@
     margin-top: -10px;
     display: inline-block;
     position: relative;
-    top: -45px;
+    top: -30px;
 }
 
 .employee-info-inline{
@@ -127,6 +134,7 @@
     position:absolute;
     top:-338px;
     right:3px;
+    z-index: 14;
 }
 #show-info-left-col{
     width:246px;
@@ -330,18 +338,36 @@
     background: #F0F0F0;
 }
 #table-info-all-employees{
-    width: -webkit-fill-available;
-    height: 319px;  
+    width:100%;
+    height: 266px;  
     background: white;                        /*neu muon chinh chieu cao thi chinh o day de chanh bi loi*/
 }
 #table-info-all-employees2 {
-    height: calc(100% - 30px);
+    height: 168px;     
+    margin-bottom: -4px; 
     overflow: scroll;
-    width: calc(100% - 452px);
+    margin-left: -4px;
+    width: calc(100% - 294px);
+    display: inline-block;
+}
+#table-info-all-employees2 th{
+    display: table-cell;
+}
+#table-info-all-employees20{
+    position: relative;
+    bottom: 239px;
+    left: 298px;
+}
+#table-info-all-employees21 {    
+    margin-bottom: -4px; 
+    overflow: hidden;
+    margin-left: -4px;
+    width: calc(100% - 294px);
     display: inline-block;
 }
 #table-info-all-employees1 {
-    height: calc(100% - 30px);              
+    height: calc(100% - 97px);     
+    margin-bottom: -4px;         
     overflow-x: scroll;
     overflow-y: hidden;
     display: inline-block;
@@ -371,12 +397,27 @@
     height: 26px;
     line-height: 26px;
     border: 1px solid #CFCFCF;
+    background: white;
+    position: relative;
+    bottom: 238px;
+    z-index: 12;
 }
-#employee-info-table-all-button{
+.employee-info-table-all-button{
     border: 1px solid #CFCFCF;
     height: 9px;
     width: 60px;
     background:  url('../Images/arr-down.png');
+    background-repeat: no-repeat;
+    background-position: 20px -4px;
+    position: relative;
+    left: calc(50% - 100px);
+    top: 9px;
+}
+.employee-info-table-all-button2 {
+    border: 1px solid #CFCFCF;
+    height: 9px;
+    width: 60px;
+    background: url('../Images/arr-up.png');
     background-repeat: no-repeat;
     background-position: 20px -4px;
     position: relative;
