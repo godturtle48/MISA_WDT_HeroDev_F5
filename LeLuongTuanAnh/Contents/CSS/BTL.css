@@ -6,14 +6,12 @@
     left: 0px;
     background: #ECF0F2;
     font-size: 13px;
+    height: 516px;
 }
 .info-all-employee-tuan-anh-pointer:hover{
     cursor: pointer;
 }
-#table-info-all-employees .tuan-anh-pointer:hover{
 
-    background: #E7F4FF;
-}
 #employee-general-info {
     background: white;
     height: 248px;
@@ -50,17 +48,40 @@
     width: 170px;
 }
 #employee-general-info-toolbar {
+    height: 35px;
     right: auto;
     left: 0px;
     top: 0px;
     border-bottom: 1px solid #CFCFCF;
 }
 #employee-info-toolbar-item1 {
-    color: #238DE6;
-    border-bottom: 2px solid #238DE6;
+    width: 152px;
+}
+#employee-info-toolbar-item2{
+    width:153px;
+}
+#employee-info-toolbar-item3{
+    width:87px;
+}
+#employee-info-toolbar-item4{
+    width:174px;
+}
+#employee-info-toolbar-item5{
+    width:171px;
+}
+#employee-info-toolbar-item6{
+    width:206px;
 }
 .employee-info-toolbar-item{
+    margin: 0px 10px;
     font-weight:normal;
+    height: 26px;
+    line-height: 26px;
+}
+.employee-info-toolbar-item-onselect{
+    color: #238DE6;
+    border-bottom: 3px solid #238DE6;
+    font-weight: bold;
 }
 .employee-info-toolbar-item:hover {
     cursor: pointer;
@@ -343,7 +364,7 @@
     background: white;                        /*neu muon chinh chieu cao thi chinh o day de chanh bi loi*/
 }
 #table-info-all-employees2 {
-    height: 168px;     
+    height: 173px;     
     margin-bottom: -4px; 
     overflow: scroll;
     margin-left: -4px;
@@ -355,7 +376,7 @@
 }
 #table-info-all-employees20{
     position: relative;
-    bottom: 239px;
+    bottom: 241px;
     left: 298px;
 }
 #table-info-all-employees21 {    
@@ -366,7 +387,7 @@
     display: inline-block;
 }
 #table-info-all-employees1 {
-    height: calc(100% - 97px);     
+    height: calc(100% - 93px);     
     margin-bottom: -4px;         
     overflow-x: scroll;
     overflow-y: hidden;
@@ -383,7 +404,7 @@
     padding-left: 10px;
 }
 .employee-info-select-ion{
-    border: 1px solid #CFCFCF;
+    border-right: 1px solid #CFCFCF;
     width: 30px;
     margin: 0px;
 }
@@ -399,8 +420,8 @@
     border: 1px solid #CFCFCF;
     background: white;
     position: relative;
-    bottom: 238px;
-    z-index: 12;
+    bottom: 241px;
+
 }
 .employee-info-table-all-button{
     border: 1px solid #CFCFCF;
