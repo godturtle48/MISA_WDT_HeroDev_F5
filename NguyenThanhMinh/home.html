@@ -17,7 +17,7 @@
             <div class="logo menu-header-right menu-right">
                 <img src="Contents/Images/logo.png" />
             </div>
-            
+
         </div>
         <div class="list-menu">
             <ul>
@@ -607,7 +607,9 @@
                                     ĐT di động
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -615,7 +617,9 @@
                                     ĐT cơ quan
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -623,7 +627,9 @@
                                     ĐT nhà riêng
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -631,7 +637,9 @@
                                     ĐT khác
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -639,7 +647,9 @@
                                     Email cơ quan
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -647,7 +657,9 @@
                                     Email cá nhân
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -655,7 +667,9 @@
                                     Email khác
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -667,7 +681,9 @@
                                     Skype
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -677,7 +693,9 @@
                                     Facebook
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -687,7 +705,9 @@
                                     MSN ID
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -707,7 +727,11 @@
                                     Tỉnh/Thành phố
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-two">
+                                        <input type="text" />
+                                        <span class="icon-drop-option">
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -725,7 +749,9 @@
                                     Số sổ hộ khẩu
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -733,7 +759,9 @@
                                     Mã số hộ gia đình
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -741,7 +769,7 @@
                                 </div>
                                 <div class="box-input">
                                     <div class="form-check">
-                                        <span class="checked"></span>
+                                        <span class="unchecked"></span>
                                         <div class="label-check">
                                             Là chủ hộ
                                         </div>
@@ -750,7 +778,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="first-block second-block">
+                    <div class="first-block second-block" id="form-address">
                         <div class="block block-left">
                             <div class="row-input">
                                 <div class="title-block">
@@ -762,7 +790,15 @@
                                     Quốc gia
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-three">
+                                        <input type="text" class="input-country"/>
+                                        <span class="icon-drop-option">
+                                        </span>
+                                        <span class="icon-dot-vertical button-country">
+                                        </span>
+                                    </div>
+                                    <div class="list-option country">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -770,7 +806,13 @@
                                     Tỉnh/Thành phố
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-two">
+                                        <input type="text" class="input-region"/>
+                                        <span class="icon-drop-option">
+                                        </span>
+                                    </div>
+                                    <div class="list-option region">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -778,7 +820,13 @@
                                     Quận/Huyện
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-two">
+                                        <input type="text" class="input-city"/>
+                                        <span class="icon-drop-option">
+                                        </span>
+                                    </div>
+                                    <div class="list-option city">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -786,7 +834,13 @@
                                     Xã/Phường
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-two">
+                                        <input type="text" class="input-wards" />
+                                        <span class="icon-drop-option">
+                                        </span>
+                                    </div>
+                                    <div class="list-option wards">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -794,7 +848,9 @@
                                     Số nhà/Đường phố/Thôn xóm
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" class="input-village"/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -813,7 +869,7 @@
                                 </div>
                                 <div class="box-input">
                                     <div class="form-check">
-                                        <span class="checked"></span>
+                                        <span class="unchecked"></span>
                                         <div class="label-check">
                                             Giống hộ khẩu thường trú
                                         </div>
@@ -825,7 +881,15 @@
                                     Quốc gia
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-three">
+                                        <input type="text" class="input-country"/>
+                                        <span class="icon-drop-option">
+                                        </span>
+                                        <span class="icon-dot-vertical">
+                                        </span>
+                                    </div>
+                                    <div class="list-option country">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -833,7 +897,13 @@
                                     Tỉnh/Thành phố
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-two">
+                                        <input type="text" class="input-region" />
+                                        <span class="icon-drop-option">
+                                        </span>
+                                    </div>
+                                    <div class="list-option region">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -841,7 +911,12 @@
                                     Quận/Huyện
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-two">
+                                        <input type="text" class="input-city"/>
+                                        <span class="icon-drop-option">
+                                        </span>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="row-input">
@@ -849,7 +924,11 @@
                                     Xã/Phường
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-two">
+                                        <input type="text" class="input-wards"/>
+                                        <span class="icon-drop-option">
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -857,7 +936,9 @@
                                     Số nhà/Đường phố/Thôn xóm
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" class="input-village"/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -882,7 +963,9 @@
                                     Họ và tên
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -890,7 +973,15 @@
                                     Quan hệ
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-three">
+                                        <input type="text" />
+                                        <span class="icon-drop-option">
+                                        </span>
+                                        <span class="icon-dot-vertical button-relationship">
+                                        </span>
+                                    </div>
+                                    <div class="list-option relationship">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -898,7 +989,9 @@
                                     ĐT di động
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -906,7 +999,9 @@
                                     ĐT nhà riêng
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -916,7 +1011,9 @@
                                     Email
                                 </div>
                                 <div class="box-input">
-                                    <input type="text" />
+                                    <div class="input-select input-select-one">
+                                        <input type="text" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -934,8 +1031,14 @@
         </div>
     </div>
 
+    <div id="table">
+
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Scripts/data-country.js"></script>
     <script src="Scripts/home.js"></script>
     <script src="Scripts/amis.js"></script>
+    <script src="Scripts/add_new_member.js"></script>
 </body>
 </html>
