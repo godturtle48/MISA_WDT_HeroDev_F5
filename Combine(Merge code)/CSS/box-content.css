@@ -114,14 +114,13 @@
     			}
     				.G-I-body-seft-img-user .btn-choser{
     					height: 28px;
-					    width: 112px;
+					    width: 120px;
 					    cursor: pointer;
 					    background-color: gray;
 					    color: #fff;
     					font-weight: bold;
     					text-align: center;
     					margin-top: -26px;
-    					margin-left: 4px;
     					border: none;
     					outline: none;
     				}
