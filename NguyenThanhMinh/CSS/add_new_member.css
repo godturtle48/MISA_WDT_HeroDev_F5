@@ -150,17 +150,115 @@
                         line-height: 32px;
                         min-width: 225px;
                         max-height: 58px;
+                        position: relative;
                     }
-
-                        .contents .form-contact-info .first-block .block .row-input .box-input input {
+                    
+                        .contents .form-contact-info .first-block .block .row-input .box-input .input-select {
                             width: inherit;
-                            height: 28px;
-                            padding: 0 6px;
-                            box-sizing: border-box;
-                            outline: none;
-                            border: 1px solid #D9D9D9;  
-                            border-radius: 3px;
+                            display: flex;
                         }
+
+                            .contents .form-contact-info .first-block .block .row-input .box-input .input-select-three input {
+                                width: inherit;
+                                height: 28px;
+                                padding-left: 6px;
+                                box-sizing: border-box;
+                                outline: none;
+                                border: 1px solid #D9D9D9;
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+                                border-right: none;
+                            }
+
+                            .contents .form-contact-info .first-block .block .row-input .box-input .input-select-three .icon-drop-option {
+                                width: 28px;
+                                min-width: 28px;
+                                height: 28px;
+                                border: 1px solid #D9D9D9;
+                                border-left: none;
+                                box-sizing: border-box;
+                                background-image: url('../Contents/Images/img-add-member-2/cbo-trigger-9x6.png');
+                                background-repeat: no-repeat;
+                                background-position: 9px 10px;
+                                cursor: pointer;
+                            }
+
+                            .contents .form-contact-info .first-block .block .row-input .box-input .input-select-three .icon-dot-vertical {
+                                width: 28px;
+                                min-width: 28px;
+                                height: 28px;
+                                border: 1px solid #D9D9D9;
+                                border-left: none;
+                                border-top-right-radius: 3px;
+                                border-bottom-right-radius: 3px;
+                                box-sizing: border-box;
+                                background-image: url('../Contents/Images/img-add-member-2/more-16x16.png');
+                                background-repeat: no-repeat;
+                                background-position: 6px 6px;
+                                cursor: pointer;
+                                display: inline-block;
+                            }
+
+                            .contents .form-contact-info .first-block .block .row-input .box-input .input-select-one input {
+                                width: inherit;
+                                height: 28px;
+                                padding-left: 6px;
+                                box-sizing: border-box;
+                                outline: none;
+                                border: 1px solid #D9D9D9;
+                                border-radius: 3px;
+                            }
+
+                            .contents .form-contact-info .first-block .block .row-input .box-input .input-select-two input {
+                                width: inherit;
+                                height: 28px;
+                                padding-left: 6px;
+                                box-sizing: border-box;
+                                outline: none;
+                                border: 1px solid #D9D9D9;
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+                                border-right: none;
+                            }
+
+                            .contents .form-contact-info .first-block .block .row-input .box-input .input-select-two .icon-drop-option {
+                                width: 28px;
+                                min-width: 28px;
+                                height: 28px;
+                                border: 1px solid #D9D9D9;
+                                border-left: none;
+                                border-top-right-radius: 3px;
+                                border-bottom-right-radius: 3px;
+                                box-sizing: border-box;
+                                background-image: url('../Contents/Images/img-add-member-2/cbo-trigger-9x6.png');
+                                background-repeat: no-repeat;
+                                background-position: 9px 10px;
+                                cursor: pointer;
+                            }
+
+                        .contents .form-contact-info .first-block .block .row-input .box-input .list-option {
+                            position: absolute;
+                            width: inherit;
+                            width: calc(100% - 8px);
+                            background: #ffffff;
+                            box-sizing: border-box;
+                            border: 1px solid #D9D9D9;
+                            border-top: none;
+                            z-index: 11;
+                            max-height: 230px;
+                            overflow: auto;
+                            display: none;
+                        }
+                        
+                            .contents .form-contact-info .first-block .block .row-input .box-input .list-option .option{
+                                height: 32px;
+                                line-height: 32px;
+                                padding: 2px;
+                            }
+
+                                .contents .form-contact-info .first-block .block .row-input .box-input .list-option .option:hover {
+                                    background: #D6E9F6;
+                                }
 
                         .contents .form-contact-info .first-block .block .row-input .box-input textarea {
                             width: inherit;
