@@ -1,25 +1,39 @@
 ﻿
 var check = 2;
 $('#icon-left-header').click(function () {
-    $('.menu-right').slideToggle();
+    $('.menu-right').toggle();
     $('.main').toggleClass('main-left-30px');
     $('.menu-li, .menu-li-ul-li').removeAttr('style');
     $('.menu-li-dropdown').filter('[status=show]').next().hide();
     $('.menu-li-dropdown').filter('[status=show]').removeAttr('status');
 
-    if (check%2 == 0) {
-        $('.search-box').css('min-width','390px');
-        $('#ip-search').css('width','80%');
-        $('.nav-panel-l-r').css('width','29.2%');
-        $('.setting-dialog').css('width','29.2%');
-        $('.nav-menu').css('box-shadow','7px -2px 36px -5px #003f7f');
-    }else{
-        $('.search-box').css('min-width','305px');
-        $('#ip-search').css('width','74%');
-        $('.nav-panel-l-r').css('width','24.2%');
-        $('.setting-dialog').css('width','26.6%');
-        $('.nav-menu').css('box-shadow','0 0 0 0');
+    //thu lại các dialog setting và application nếu nó đang được hiện,khi click vào icon menubar
+    $('.setting-dialog').css('display', 'none');
+    $('.triangle').css('display', 'none');
+    $('.catalog-application-catalog').css('display', 'none');
+    //
 
+    if (check % 2 == 0) {
+        $('.search-box').css('min-width', '390px');
+        $('#ip-search').css('width', '80%');
+        $('.nav-panel-l-r').css('width', '29.2%');
+        $('.setting-dialog').css('width', '29.2%');
+        $('.nav-menu').css('box-shadow', '7px -2px 36px -5px #003f7f');
+
+        // box
+        //$('.box-content').css('left', '30px');
+        $('.box-content').css('width', 'calc(100vw - 30px)');
+        //box
+    } else {
+        $('.search-box').css('min-width', '305px');
+        $('#ip-search').css('width', '74%');
+        $('.nav-panel-l-r').css('width', '24.2%');
+        $('.setting-dialog').css('width', '26.6%');
+        $('.nav-menu').css('box-shadow', '0 0 0 0');
+        // box
+        //$('.box-content').css('left', '230px');
+        $('.box-content').css('width', 'calc(100vw - 230px)');
+        //box
     }
     check++;
 });
