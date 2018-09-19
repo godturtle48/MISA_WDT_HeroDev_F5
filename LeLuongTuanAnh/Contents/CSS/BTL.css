@@ -1,4 +1,7 @@
-﻿#info-all-employee-tuan-anh{
+﻿body{
+    overflow: hidden;
+}
+#info-all-employee-tuan-anh{
     margin-left: 230px;             /*dieu chinh le trai de tuy chinh chieu rong*/
     padding: 10px;
     position: relative;
@@ -7,6 +10,7 @@
     background: #ECF0F2;
     font-size: 13px;
     height: 516px;
+    margin-top: 120px;
 }
 .info-all-employee-tuan-anh-pointer:hover{
     cursor: pointer;
