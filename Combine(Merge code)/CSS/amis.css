@@ -445,10 +445,11 @@ body {
 	height: 600px;
 }
 
-.box-content {
-
+.box-title {
+    display:none;
 }
 
+    
     .box-content .building-alert {
         position: absolute;
         width: calc(100vw - 248px);

@@ -267,3 +267,16 @@ $('.system').click(function () {
 $('#profile-item').click(function () {
     $('.building-alert').hide();
 })
+
+$('#add-button').click(function () {
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').show();
+    $('.contents').show();
+})
+
+$('#profile-item').click(function () {
+    $('.box-title').show();
+    $('#info-all-employee-tuan-anh').show();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
+})

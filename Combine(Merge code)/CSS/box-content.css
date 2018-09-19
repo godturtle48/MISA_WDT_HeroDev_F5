@@ -28,6 +28,7 @@
     		padding: 12px;
     		margin-bottom: 20px;
     		padding: 20px;
+            display: none;
     	}
     	.box-content .box-body .box-body-frame .general-information-header div{
 			color: #0c68b5;

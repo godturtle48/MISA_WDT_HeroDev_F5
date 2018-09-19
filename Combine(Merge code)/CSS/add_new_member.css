@@ -2,7 +2,9 @@
     
     /*overflow-y: auto;*/
 }
-
+.contents {
+    display:none;
+}
 
     .contents .form-contact-info {
         box-shadow: #888 0 2px 6px;      
