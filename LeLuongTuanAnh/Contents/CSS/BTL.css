@@ -212,7 +212,7 @@
     font-size: 13px;
 }
 #menu-employee-info-detail{
-    overflow-x:hidden;
+    overflow:hidden;
     width:calc(100% - 100px);
 }
 .employee-info-toolbar-item{
@@ -376,7 +376,7 @@
 }
 #table-info-all-employees20{
     position: relative;
-    bottom: 241px;
+    bottom: 240px;
     left: 298px;
 }
 #table-info-all-employees21 {    
