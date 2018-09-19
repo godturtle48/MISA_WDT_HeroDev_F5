@@ -1,4 +1,6 @@
 ﻿
+
+
 //Create Tooltip
 let setupTooltip = function () {
     let tooltip = "",
@@ -27,3 +29,8 @@ setupTooltip();
 //$('.search-box').click(function () {
 //    $('.inactive-checkbox').toggle();
 //})
+
+$("#employee-file-add-button").click(function () {
+    $('#employee-file').hide();
+    $('#employee-file-add-button-pannel').show();
+})
