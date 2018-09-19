@@ -4,7 +4,6 @@
 }
 
 
-
 .misa-pannel{
     display:flex;
     height:25px;
@@ -268,6 +267,28 @@ select.right-right, .right-right option{
     margin-left: 5px;
 }
 
+.icon-saveandadd-button-toolbar {
+    background-image: url('../Contents/Images/saveadd16.png');
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 17px;
+}
+
+.lable-savesaveandadd-button-toolbar {
+    margin-left: 5px;
+    width: 73px;
+}
+
+.icon-close-button-toolbar {
+    background-image: url('../Contents/Images/close16.png');
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 17px;
+}
+
+.lable-close-button-toolbar {
+    margin-left: 5px;
+}
 .icon-edit-button-toolbar {
     background-image: url('../Contents/Images/edit16.png');
     background-repeat: no-repeat;
@@ -553,8 +574,9 @@ select.right-right, .right-right option{
     width: 9px;
     margin:3px;
 }
+
 #all-alphabet {
-    width: 50px ;
+    width: 50px;
     /*height:21px;*/
     color: #0277bd;
     cursor: pointer;
@@ -604,4 +626,10 @@ select.right-right, .right-right option{
     text-align: center;
     position: absolute;
     z-index: 1000;
+}
+.top-container{
+    display:none;
+}
+#employee-file{
+    display:block;
 }
