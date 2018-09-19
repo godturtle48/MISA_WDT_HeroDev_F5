@@ -145,3 +145,15 @@
 					background: url(../Contents/Images/close16.png) no-repeat;
 					background-position: 9px;
 				}
+
+#num-code {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    height: 26px;
+    outline: none;
+    width: 21px;
+    padding-left: 5px;
+    margin-right: 5px;
+    background-color: #e4e4e4;
+    cursor: default;
+}

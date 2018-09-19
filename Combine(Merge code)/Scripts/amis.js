@@ -38,6 +38,16 @@ $('#number-down').click(function () {
     $('#up-down-year').val(graduationYear);
 });
 
+var salary = 0;
+$('#number-up-salary').click(function () {
+    salary++;
+    $('#up-down-salary').val(salary);
+});
+$('#number-down-salary').click(function () {
+    salary--;
+    $('#up-down-salary').val(salary);
+});
+
 //upload image file
 $('#upfile').click(function () {
     $('#file-up').trigger('click');

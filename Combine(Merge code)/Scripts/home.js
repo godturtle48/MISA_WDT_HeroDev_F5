@@ -23,6 +23,7 @@ $('#icon-left-header').click(function () {
         // box
         //$('.box-content').css('left', '30px');
         $('.box-content').css('width', 'calc(100vw - 30px)');
+        $('.building-alert').css('width', 'calc(100vw - 48px)');
         //box
     } else {
         $('.search-box').css('min-width', '305px');
@@ -34,6 +35,7 @@ $('#icon-left-header').click(function () {
         //$('.box-content').css('left', '230px');
         $('.box-content').css('width', 'calc(100vw - 230px)');
         //box
+        $('.building-alert').css('width', 'calc(100vw - 248px)');
     }
     check++;
 });

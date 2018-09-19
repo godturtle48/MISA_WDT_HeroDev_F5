@@ -451,9 +451,9 @@ body {
 
     .box-content .building-alert {
         position: absolute;
-        width: calc(100vw - 250px);
+        width: calc(100vw - 248px);
         left: 0px;
-        top: 50px;
+        top: 0px;
         padding: 10px;
         background-color: #ecf0f2;
         height: calc(100vh - 70px);

@@ -177,3 +177,47 @@
     			.G-I-body-ace-right{
     				width: 50%;		
     			}
+
+            /* Thong tin cong viec*/
+            .box-content .box-body .box-body-frame .general-information-body .G-I-body-work-info {
+                height: 400px;
+                margin-top: 20px;           
+                display: flex;
+                padding: 10px;
+                padding-bottom: 0;
+                padding-right: 0;
+            }
+
+                .box-content .box-body .box-body-frame .general-information-body .G-I-body-work-info
+                .G-I-body-id-left {
+                    width: 49%;
+                    margin-right: 20px;
+                }
+
+                .box-content .box-body .box-body-frame .general-information-body .G-I-body-work-info
+                .G-I-body-id-right {
+                    width: 50%;
+                }
+
+        /*Thong tin luong*/
+        .box-content .box-body .box-body-frame .general-information-body .G-I-body-salary-info {
+            height: 400px;
+            margin-top: 20px;
+            border-top: 1px solid #cfd8dc;
+            display: flex;
+            padding: 10px;
+            padding-bottom: 0;
+            padding-right: 0;
+        }
+
+            .box-content .box-body .box-body-frame .general-information-body .G-I-body-salary-info
+            .G-I-body-sal-left {
+                width: 49%;
+                margin-right: 20px;
+            }
+
+            .box-content .box-body .box-body-frame .general-information-body .G-I-body-salary-info
+            .G-I-body-sal-right {
+                width: 50%;
+            }
+
