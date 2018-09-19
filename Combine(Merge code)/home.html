@@ -982,7 +982,7 @@
                     <div class="r-user-img">
                         <img src="Contents/Images/ImageHandler.png">
                     </div>
-                    <span>Văn Mạnh</span>
+                    <span>WDT_F5</span>
                 </div>
                 <div class="r-user-profile" style="display:none;">
                     <div class="r-user-profile-head">
@@ -1017,7 +1017,7 @@
         </div>
         <div class="box-content">
             <div class="box-title">
-                <div class="top-container">
+                <div class="top-container" id="profile-panel">
                     <div class="misa-pannel">
                         <div class="left-misa-panel  inline">
                             <div class="prev-file">Hồ sơ nhân viên</div>
@@ -1034,9 +1034,9 @@
                                     <option value="Trung tâm phát triển phần mềm">
                                 </datalist>
                                 <!--<option class="inactive-checkbox  inline"
-                                    <input type="checkbox" />
-                                    Hiển thị cơ cấu tổ chức đã ngừng theo dõi
-                                >-->
+                        <input type="checkbox" />
+                        Hiển thị cơ cấu tổ chức đã ngừng theo dõi
+                    >-->
 
                             </div>
                             <div class="vertical-line-misapannel"></div>
@@ -1098,6 +1098,52 @@
                                 <div class="lable-help-button-toolbar">Giúp</div>
                             </div>
                             <div class="icon-more-toolbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--1.1 Thêm hồ sơ nhân viên-->
+                <div class="top-container" id="employee-file-add-button-pannel">
+                    <div class="misa-pannel">
+                        <div class="left-misa-panel  inline">
+                            <div class="prev-file">Hồ sơ nhân viên</div>
+                            <div class="icon-ar-right"></div>
+                            <div class="after-file">Thêm mới nhân viên</div>
+                        </div>
+
+                    </div>
+                    <div class="wrap-toolbar">
+                        <div class="toolbar">
+
+                            <div class="button-toolbar">
+                                <div class="icon-save-button-toolbar"></div>
+                                <div class="lable-save-button-toolbar">Cất</div>
+                            </div>
+                            <div class="button-toolbar">
+                                <div class="icon-saveandadd-button-toolbar"></div>
+                                <div class="lable-savesaveandadd-button-toolbar">Cất & Thêm</div>
+                            </div>
+                            <div class="button-toolbar">
+                                <div class="icon-stop-button-toolbar"></div>
+                                <div class="lable-stop-button-toolbar">Hoãn</div>
+                            </div>
+                            <div class="button-toolbar">
+                                <div class="icon-standartsetting-button-toolbar"></div>
+                                <div class="lable-standartsetting-button-toolbar">Thiết lập ngầm định</div>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="button-toolbar">
+                                <div class="icon-help-button-toolbar"></div>
+                                <div class="lable-help-button-toolbar">Giúp</div>
+                            </div>
+                            <div class="button-toolbar">
+                                <div class="icon-reply-button-toolbar"></div>
+                                <div class="lable-reply-button-toolbar">Phản hồi</div>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="button-toolbar">
+                                <div class="icon-close-button-toolbar"></div>
+                                <div class="lable-close-button-toolbar">Đóng</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1360,7 +1406,7 @@
                                             <img src="Contents/Images/number-up.png">
                                         </div>
                                         <div style="cursor: pointer;height: 14.5px;width: 16px;" id="number-down">
-                                            <img src="Contents/Images/number-down.png">
+                                            <img src="Contents/Images/number-down.png" style="margin-top: -5px">
                                         </div>
                                     </div>
                                 </div>
@@ -2104,6 +2150,7 @@
                                     <div class="select-more">
                                         <select requiredInput="true" id="" class="form-input"
                                                 style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">
+                                            <option></option>
                                             <option>Đang làm việc</option>
                                             <option>Không có việc làm</option>
                                             <option>Đang làm thủ tục thôi việc</option>
@@ -2139,7 +2186,7 @@
                                             <img src="Contents/Images/number-up.png">
                                         </div>
                                         <div style="cursor: pointer;height: 14.5px;width: 16px;" id="number-down-salary">
-                                            <img src="Contents/Images/number-down.png">
+                                            <img src="Contents/Images/number-down.png" style="margin-top: -5px">
                                         </div>
                                     </div>
                                 </div>
@@ -2151,7 +2198,7 @@
                                             <img src="Contents/Images/number-up.png">
                                         </div>
                                         <div style="cursor: pointer;height: 14.5px;width: 16px;" id="number-down-salary">
-                                            <img src="Contents/Images/number-down.png">
+                                            <img src="Contents/Images/number-down.png" style="margin-top: -5px">
                                         </div>
                                     </div>
                                 </div>
@@ -2163,7 +2210,7 @@
                                             <img src="Contents/Images/number-up.png">
                                         </div>
                                         <div style="cursor: pointer;height: 14.5px;width: 16px;" id="number-down-salary">
-                                            <img src="Contents/Images/number-down.png">
+                                            <img src="Contents/Images/number-down.png" style="margin-top: -5px">
                                         </div>
                                     </div>
                                     <select class="form-input" style="width: 40%">
@@ -2180,12 +2227,12 @@
                                 <div class="div-form-input" style="margin-top: 15px;">
                                     <div class="label-input">Số ngày phép</div>
                                     <input class="form-input date-input" id="up-down-salary" />
-                                    <div class="up-down-salary">
+                                    <div class="up-down-salary" style="height: 30px">
                                         <div style="cursor: pointer;height: 14.5px;width: 16px" id="number-up-salary">
                                             <img src="Contents/Images/number-up.png">
                                         </div>
                                         <div style="cursor: pointer;height: 14.5px;width: 16px;" id="number-down-salary">
-                                            <img src="Contents/Images/number-down.png">
+                                            <img src="Contents/Images/number-down.png" style="margin-top: -5px">
                                         </div>
                                     </div>
                                 </div>
@@ -2212,7 +2259,7 @@
                                             <img src="Contents/Images/number-up.png">
                                         </div>
                                         <div style="cursor: pointer;height: 14.5px;width: 16px;" id="number-down-salary">
-                                            <img src="Contents/Images/number-down.png">
+                                            <img src="Contents/Images/number-down.png" style="margin-top: -5px">
                                         </div>
                                     </div>
                                 </div>

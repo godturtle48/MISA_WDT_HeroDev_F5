@@ -2,7 +2,6 @@
     position: absolute;
     top: 50px;
     /*left: 230px;*/
-    background-color: #ff0000;
     width: calc(100vw - 230px);
     height: calc(100vh - 50px);
 }
@@ -24,8 +23,7 @@
     		right: auto;
     		background-color: #fff;
     		box-shadow: 0 2px 6px #888;
-    		border-radius: 4px;
-    		padding: 12px;
+    		border-radius: 4px;   		
     		margin-bottom: 20px;
     		padding: 20px;
             display: none;
@@ -69,6 +67,11 @@
 					min-width: 120px;
 					margin-top: 8px;
 				}
+				.box-content .box-body .box-body-frame .general-information-body .date-input{
+                    width: 125px;
+                    height: 30px;
+                }
+
 				.box-content .box-body .box-body-frame .general-information-body .date-input{
 					width: 125px;
 					height: 30px;
@@ -174,6 +177,27 @@
 					width: 49%;
 					margin-right: 20px;
     			}
+					.box-content .box-body .box-body-frame .general-information-body .G-I-body-acedemic-level
+                    .G-I-body-ace-left #up-down-year{
+                        border-top-right-radius:0px;
+                        border-bottom-right-radius: 0px;
+                        border-right: none;
+                    }
+                    .box-content .box-body .box-body-frame .general-information-body .G-I-body-acedemic-level
+                    .G-I-body-ace-left .up-down-year{
+                        border: 1px solid #d9d9d9;
+                        border-radius: 4px;
+                        height: 30px;
+                        width: 18px;
+                        border-left: none;
+                        border-bottom-left-radius: 0px;
+                        border-top-left-radius: 0px;
+                    }
+                        .box-content .box-body .box-body-frame .general-information-body .G-I-body-acedemic-level
+                        .G-I-body-ace-left .up-down-year div:hover{
+                            background-color: #d9d9d9;
+                        }
+
     			.box-content .box-body .box-body-frame .general-information-body .G-I-body-acedemic-level
     			.G-I-body-ace-right{
     				width: 50%;		
@@ -221,4 +245,24 @@
             .G-I-body-sal-right {
                 width: 50%;
             }
+
+#up-down-salary {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+}
+
+.up-down-salary {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    height: 28px;
+    width: 18px;
+    border-left: none;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.up-down-salary div:hover {
+    background-color: #d9d9d9;
+}
 

@@ -608,3 +608,7 @@ select.right-right, .right-right option{
     position: absolute;
     z-index: 1000;
 }
+
+#employee-file-add-button-pannel {
+    display: none;
+}

@@ -85,52 +85,100 @@ $('.menu-li-dropdown').click(function () {
 
 
 //hien thi trang dang duoc nang cap
-$('#desk-item').click(function () {
+$('#desk-item').click(function () {   
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('#contact-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('#fast-report-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('#garbage-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('#email-history-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('.contract-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('.self-update-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('.receive-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('.grant-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('.error-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('.review-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 $('.welfare-item').click(function () {
     $('.building-alert').show();
+    $('.box-title').hide();
+    $('#info-all-employee-tuan-anh').hide();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
 })
 
 // toggle-menu
@@ -266,17 +314,18 @@ $('.system').click(function () {
 
 $('#profile-item').click(function () {
     $('.building-alert').hide();
+    $('.box-title').show();
+    $('#profile-panel').show();
+    $('#info-all-employee-tuan-anh').show();
+    $('.box-body-frame').hide();
+    $('.contents').hide();
+    $('#employee-file-add-button-pannel').hide();
 })
 
 $('#add-button').click(function () {
     $('#info-all-employee-tuan-anh').hide();
     $('.box-body-frame').show();
     $('.contents').show();
-})
-
-$('#profile-item').click(function () {
-    $('.box-title').show();
-    $('#info-all-employee-tuan-anh').show();
-    $('.box-body-frame').hide();
-    $('.contents').hide();
+    $('#profile-panel').hide();
+    $('#employee-file-add-button-pannel').show();
 })
