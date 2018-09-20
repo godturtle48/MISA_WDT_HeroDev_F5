@@ -1,11 +1,12 @@
 ﻿#info-all-employee-tuan-anh{
     padding: 10px;
     position: absolute;
-    top: 117px;                       /*phan chinh co gian cua t bi loi nen phai chinh position o top voi left o day*/
+    top: 67px;                       /*phan chinh co gian cua t bi loi nen phai chinh position o top voi left o day*/
     left: 0px;
     background: #ECF0F2;
     font-size: 13px;
-    height: 516px;
+    width: calc(100vw - 240px);
+    height: calc(100vh - 117px);
     display: none;
 }
 .info-all-employee-tuan-anh-pointer:hover{
@@ -111,21 +112,21 @@
     align-items:center;
 }
 .employee-info-down-ion{
-    background-image: url('../Images/cbo-trigger.png');
+    background-image: url('Contents/Images/cbo-trigger.png');
     height:20px;
     width:20px;
     background-repeat:no-repeat;
     background-position: 8px 7px;
 }
 #employee-info-left-icon {
-    background-image: url('../Images/tab-arr-left-disable.png');
+    background-image: url('Contents/Images/tab-arr-left-disable.png');
     height:20px;
     width:20px;
     background-repeat:no-repeat;
     background-position: 5px 0px;
 }
 #employee-info-right-icon {
-    background-image: url('../Images/tab-arr-right.png');
+    background-image: url('Contents/Images/tab-arr-right.png');
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
@@ -133,14 +134,14 @@
 }
 
 #show-info-toolbar-icon {
-    background-image: url('../Images/quick-link.png');
+    background-image: url('Contents/Images/quick-link.png');
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
     background-position: 0px 4px;
 }
 #setting-toolbar-info-detail-icon {
-    background-image: url('../Images/setting.png');
+    background-image: url('Contents/Images/setting.png');
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
@@ -274,7 +275,7 @@
     position:relative;
     top:-40px;
     left:550px;
-    background-image: url('../Images/window-close16.png');
+    background-image: url('Contents/Images/window-close16.png');
     height:32px;
     width:30px;
     background-repeat:no-repeat;
@@ -284,7 +285,7 @@
     top: -235px;
     border: 1px solid #CFCFCF;
     display: block;
-    background-image: url('../Images/up16.png');
+    background-image: url('Contents/Images/up16.png');
     background-repeat: no-repeat;
     height: 36px;
     width: 30px;
@@ -295,7 +296,7 @@
     top: -230px;
     border: 1px solid #CFCFCF;
     display: block;
-    background-image: url('../Images/down16.png');
+    background-image: url('Contents/Images/down16.png');
     background-repeat: no-repeat;
     height: 36px;
     background-position: 7px 8px;
@@ -307,7 +308,7 @@
 }
 #setting-toolbar-info-help-BT {
     border: 1px solid #CFCFCF;
-    background-image: url('../Images/question16.png');
+    background-image: url('Contents/Images/question16.png');
     background-repeat: no-repeat;
     height: 30px;
     background-position: 7px 8px;
@@ -328,7 +329,7 @@
     line-height: 30px;
 }
 #setting-toolbar-info-BT2 {
-    background-image: url('../Images/select16.png');
+    background-image: url('Contents/Images/select16.png');
     border: 1px solid #CFCFCF;
     height: 30px;
     width: 53px;
@@ -342,7 +343,7 @@
 #setting-toolbar-info-BT3 {
     width: 53px;
     padding-left: 30px;
-    background-image: url('../Images/close16.png');
+    background-image: url('Contents/Images/close16.png');
     border: 1px solid #CFCFCF;
     height: 30px;
     text-align: center;
@@ -427,7 +428,7 @@
     border: 1px solid #CFCFCF;
     height: 9px;
     width: 60px;
-    background:  url('../Images/arr-down.png');
+    background:  url('Contents/Images/arr-down.png');
     background-repeat: no-repeat;
     background-position: 20px -4px;
     position: relative;
@@ -438,7 +439,7 @@
     border: 1px solid #CFCFCF;
     height: 9px;
     width: 60px;
-    background: url('../Images/arr-up.png');
+    background: url('Contents/Images/arr-up.png');
     background-repeat: no-repeat;
     background-position: 20px -4px;
     position: relative;

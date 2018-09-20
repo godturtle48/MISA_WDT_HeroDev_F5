@@ -38,14 +38,59 @@ $('#number-down').click(function () {
     $('#up-down-year').val(graduationYear);
 });
 
-var salary = 0;
+var salary = 0.00;
 $('#number-up-salary').click(function () {
     salary++;
     $('#up-down-salary').val(salary);
 });
+
 $('#number-down-salary').click(function () {
     salary--;
     $('#up-down-salary').val(salary);
+});
+
+var insurance = 0;
+$('#number-up-insurance').click(function () {
+    insurance++;
+    $('#up-down-insurance').val(insurance);
+});
+
+$('#number-down-insurance').click(function () {
+    insurance--;
+    $('#up-down-insurance').val(insurance);
+});
+
+var bounty = 0;
+$('#number-up-bounty').click(function () {
+    bounty++;
+    $('#up-down-bounty').val(bounty);
+});
+
+$('#number-down-bounty').click(function () {
+    bounty--;
+    $('#up-down-bounty').val(bounty);
+});
+
+var absent = 0;
+$('#number-up-absent').click(function () {
+    absent++;
+    $('#up-down-absent').val(absent);
+});
+
+$('#number-down-absent').click(function () {
+    absent--;
+    $('#up-down-absent').val(absent);
+});
+
+var ratio = 0;
+$('#number-up-ratio').click(function () {
+    ratio++;
+    $('#up-down-ratio').val(ratio);
+});
+
+$('#number-down-ratio').click(function () {
+    ratio--;
+    $('#up-down-ratio').val(ratio);
 });
 
 //upload image file
