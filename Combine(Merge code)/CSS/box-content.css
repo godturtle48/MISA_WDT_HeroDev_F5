@@ -246,13 +246,13 @@
                 width: 50%;
             }
 
-#up-down-salary {
+#up-down-salary, #up-down-insurance, #up-down-bounty, #up-down-absent, #up-down-ratio {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-right: none;
 }
 
-.up-down-salary {
+.up-down-salary, .up-down-insurance, .up-down-bounty, .up-down-absent, .up-down-ratio {
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     height: 28px;
@@ -262,7 +262,7 @@
     border-top-left-radius: 0px;
 }
 
-.up-down-salary div:hover {
-    background-color: #d9d9d9;
-}
+    .up-down-salary div:hover, .up-down-insurance div:hover, .up-down-bounty div:hover, .up-down-absent div:hover, .up-down-ratio div:hover {
+        background-color: #d9d9d9;
+    }
 
