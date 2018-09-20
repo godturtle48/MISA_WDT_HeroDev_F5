@@ -38,12 +38,6 @@
         $(this).toggleClass('unchecked');
     });
 
-    // toggle checkbox
-    $('.form-have-btn-check').children('.checked, .unchecked').click(function () {
-        $(this).toggleClass('checked');
-        $(this).toggleClass('unchecked');
-    });
-
     // toggle select option
     $('.box-input').children('.input-select-two, .input-select-three').children('.icon-drop-option').click(function () {
         $(this).parent().siblings('.list-option').toggle();

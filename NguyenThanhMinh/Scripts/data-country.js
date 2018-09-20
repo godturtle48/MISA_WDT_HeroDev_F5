@@ -1,4 +1,9 @@
-﻿function ascii_slug(str) {
+﻿/* *
+ * Hàm đổi chuỗi chữ thường có dấu sang không dấu
+ * @param : string str;
+ * @return : string str;
+ */
+function ascii_slug(str) {
     str = str.toLowerCase();// chuyển chuỗi sang chữ thường để xử lý
 
     // tìm kiếm và thay thế tất cả các nguyên âm có dấu sang không dấu
@@ -8,32 +13,15 @@
     str = str.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/g, "o");
     str = str.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/g, "u");
     str = str.replace(/ý|ỳ|ỷ|ỹ|ỵ/g, "y");
-    
+
     return str;// xuất kết quả xữ lý ra	
 };
 
 $(document).ready(function () {
 
-    var selectedCountry = selectedRegion = selectedCity = countryCode = "";
+    var  countryCode = "";
 
     var BATTUTA_KEY = "b8dbfdd0584c9c1aff4d73f1ca121af0";
-
-    // var url =
-    //    "https://battuta.medunes.net/api/country/all/?key=" +
-    //    BATTUTA_KEY +
-    //    "&callback=?";
-
-    //$.getJSON(url, function (data) {
-    //    $.each(data, function (index, value) {
-    //        // APPEND OR INSERT DATA TO SELECT ELEMENT. Set the country code in the id section rather than in the value.
-    //        $("#country").append(
-    //            '<div id="' + value.code + '" value="' + value.name + '" class="option">' + value.name + "</div>"
-    //        );
-    //    });
-    //    $('.option').click(function () {
-    //        $(this).parent().siblings().find('input').val($(this).attr('value'));
-    //    });
-    //});
 
     // đưa dữ liệu country vào ô list option
     $.ajax({
@@ -48,7 +36,7 @@ $(document).ready(function () {
             });
             $('.option').click(function () {
                 $(this).parent().siblings().find('input').val($(this).attr('value'));
-                $(this).parent().siblings().find('input').attr('code-country', $(this).attr('id') );
+                $(this).parent().siblings().find('input').attr('code-country', $(this).attr('id'));
                 $(this).parent().siblings().find('input').focus();
             });
         },
@@ -57,6 +45,7 @@ $(document).ready(function () {
     // đưa dữ liệu region vào ô list option
     $('.input-region').focus(function () {
         countryCode = $(this).parents('.row-input').prev().find('input').attr('code-country');
+        // Trường hợp là Việt Nam thì load dữ liệu có sẵn
         if (countryCode == "vn") {
             $(this).parent().next().empty();
             $.ajax({
@@ -75,7 +64,8 @@ $(document).ready(function () {
                     });
                 },
             });
-        } else {
+        } else { 
+            // Trường hợp không phải Việt Nam load dữ liệu từ API
             var url_region = "https://battuta.medunes.net/api/region/" +
                 countryCode +
                 "/all/?key=" +
@@ -177,10 +167,10 @@ $(document).ready(function () {
                     });
                 },
             });
-        } 
+        }
     });
 
-
+    // Cập nhập thông tin địa chỉ vào ô textarea
     $('#form-address').find('input').blur(function () {
         $(this).parents('.row-input').siblings().last().find('textarea').empty();
         var link = $(this).parents('.block');
@@ -202,9 +192,10 @@ $(document).ready(function () {
         }
         $(this).parents('.row-input').siblings().last().find('textarea').append(address);
 
-       
+
     });
 
+    // Cập nhập thông tin địa chỉ khối phải khi thay đổi khối trái
     $('#form-address').children('.block-left').find('input').blur(function () {
         if ($('#form-address').children('.block-right').find('span').first().hasClass('checked')) {
             var link_left = $('#form-address').children('.block-left');
@@ -218,7 +209,7 @@ $(document).ready(function () {
         }
     });
 
-    
+    // Click vào khối check thì không cho nhập thông tin vào khối phải
     $('#form-address').children('.block-right').find('span').first().click(function () {
         if ($('#form-address').children('.block-right').find('span').first().hasClass('unchecked')) {
             $('#form-address-right').trigger('reset');
@@ -243,6 +234,7 @@ $(document).ready(function () {
         }
     });
 
+    // tải dữ liệu quan hệ vào option
     $.ajax({
         type: 'GET',
         url: 'Scripts/data-address/relationship.json',
@@ -254,20 +246,39 @@ $(document).ready(function () {
                 );
             });
             $('.option').click(function () {
-                $(this).parent().siblings().find('input').val($(this).attr('value'));   
+                $(this).parent().siblings().find('input').val($(this).attr('value'));
                 $(this).parent().siblings().find('input').focus();
             });
         },
     });
 
-
-    $('#form-address').find("input").on("keyup", function () {
+    // lọc dữ liệu theo giá trị nhập vào từ bàn phím người dùng
+    $('#form-address, #box-input-city').find("input").on("keyup", function () {
         var value = $(this).val().toLowerCase();
         $(this).parent().next().find(".option").filter(function () {
             $(this).parents('.list-option').show();
             value = ascii_slug(value);
             $(this).toggle(ascii_slug($(this).text().toLowerCase()).indexOf(value) > -1);
         });
+    });
+
+
+    // tải dữ liệu city vào option
+    $.ajax({
+        type: 'GET',
+        url: 'Scripts/data-address/tinh_tp_vn.json',
+        success: function (data) {
+            $.each(data, function (index, value) {
+                // APPEND OR INSERT DATA TO SELECT ELEMENT. Set the country code in the id section rather than in the value.
+                $(".list-option-city").append(
+                    '<div value="' + value.name + '" class="option">' + value.name + "</div>"
+                );
+            });
+            $('.option').click(function () {
+                $(this).parent().siblings().find('input').val($(this).attr('value'));
+                $(this).parent().siblings().find('input').focus();
+            });
+        },
     });
 
 });

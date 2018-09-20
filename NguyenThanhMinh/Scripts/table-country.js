@@ -1,4 +1,5 @@
-﻿$.ajax({
+﻿// tải dữ liệu country vào bảng
+$.ajax({
     type: 'GET',
     url: 'Scripts/data-address/country.json',
     success: function (data) {
@@ -9,6 +10,7 @@
             );
         });
 
+        // lọc code-country theo giá trị nhập vào từ bán phím
         $('.table-select-country').find("input").first().on("keyup", function () {
             var value = $(this).val().toLowerCase();
             $('#table-list-country').find("tr").filter(function () {
@@ -17,6 +19,7 @@
             });
         });
 
+        // lọc name-country theo giá trị nhập vào từ bàn phím
         $('.table-select-country').find("input").last().on("keyup", function () {
             var value = $(this).val().toLowerCase();
             $('#table-list-country').find("tr").filter(function () {
@@ -25,6 +28,7 @@
             });
         });
 
+        // thêm select vào hàng country khi ấn 
         $('#table-list-country').find('tr').click(function () {
             $('#table-list-country').find('tr').removeClass('select-tr');
             $(this).addClass('select-tr');
@@ -40,6 +44,7 @@
             }
         });
 
+        // Án nút chọn thì thoát madel
         $('.button-madal-select-country').click(function () {
             var tr_select = $('#table-list-country').find('.select-tr');
             $('.processing').siblings('input').val(tr_select.children().first().next().text());
@@ -51,6 +56,7 @@
     },
 });
 
+// phóng to madal
 $('#btn-maxsize-restore').click(function () {
     if ($(this).hasClass('btn-maxsize')) {
         $(this).parents('.modal-contents').removeClass('modal-size');
@@ -63,6 +69,7 @@ $('#btn-maxsize-restore').click(function () {
     }
 });
 
+// phóng to madal
 $('.modal-header').dblclick(function () {
     if ($(this).parent().hasClass('modal-size')) {
         $(this).parent().removeClass('modal-size');
