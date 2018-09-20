@@ -1,0 +1,3823 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../index.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <!--1.hồ sơ-->
+    <div class="top-container" id="employee-file">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Hồ sơ nhân viên</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Hồ sơ</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                    <!--<option class="inactive-checkbox  inline"
+                        <input type="checkbox" />
+                        Hiển thị cơ cấu tổ chức đã ngừng theo dõi
+                    >-->
+
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Đang làm việc</option>
+                        <option>Đã nghỉ việc</option>
+                        <option>Đã kích hoạt tài khoản</option>
+                        <option>Chưa kích hoạt tài khoản</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div id="employee-file-add-button" class="button-toolbar  hover-reveal" data-tooltip="Thêm">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="Xem">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="Xóa">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="In">
+                    <div class="icon-print-button-toolbar"></div>
+                    <div class="lable-print-button-toolbar">In</div>
+                </div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="Gửi email hàng loạt">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="Báo cáo">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="Nạp">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="button-toolbar  hover-reveal" data-tooltip="Tiện ích">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="Phản hồi">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar  hover-reveal" data-tooltip="Giúp">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="div-tooltip"></div>
+
+    <!--1.1 Thêm hồ sơ nhân viên-->
+    <div class="top-container" id="employee-file-add-button-pannel">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Hồ sơ nhân viên</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Thêm mới nhân viên</div>
+            </div>
+            
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+
+                <div class="button-toolbar">
+                    <div class="icon-save-button-toolbar"></div>
+                    <div class="lable-save-button-toolbar">Cất</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-saveandadd-button-toolbar"></div>
+                    <div class="lable-savesaveandadd-button-toolbar">Cất & Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-stop-button-toolbar"></div>
+                    <div class="lable-stop-button-toolbar">Hoãn</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-standartsetting-button-toolbar"></div>
+                    <div class="lable-standartsetting-button-toolbar">Thiết lập ngầm định</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-close-button-toolbar"></div>
+                    <div class="lable-close-button-toolbar">Đóng</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-tooltip"></div>
+
+    <!--2.hợp đồng-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Hồ sơ nhân viên</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Hợp đồng</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Hợp đồng đang có hiệu lực</option>
+                        <option>Hợp đồng sắp hết hạn học việc trong vòng 10 ngày</option>
+                        <option>Hợp đồng sắp hết hạn thử việc trong vòng 10 ngày</option>
+                        <option>Hợp đồng sắp hết hạn trong vòng 10 ngày</option>
+                        <option>Hợp đồng đang có hiệu lực và đã hết hạn</option>
+                        <option>Hợp đồng hết hiệu lực</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 3.nhân viên tự cập nhật-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Hồ sơ nhân viên</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Nhân viên tự cập nhật</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-setting-button-toolbar"></div>
+                    <div class="lable-setting-button-toolbar">Thiết lập</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-inspect-button-toolbar"></div>
+                    <div class="lable-inspect-button-toolbar">Duyệt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-uninspect-button-toolbar"></div>
+                    <div class="lable-uninspect-button-toolbar">Không duyệt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 4.quản lí thời gian -> nghỉ-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí thời gian</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí nghỉ</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Chờ duyệt</option>
+                        <option>Đã được duyệt</option>
+                        <option>Không được duyệt</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-emailsample-button-toolbar"></div>
+                    <div class="lable-emailsample-button-toolbar">Mẫu email</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-import-button-toolbar"></div>
+                    <div class="lable-import-button-toolbar">Nhập khẩu</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--5. quản lí thời gian -> làm thêm-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí thời gian</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí làm thêm</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Chờ duyệt</option>
+                        <option>Đã được duyệt</option>
+                        <option>Không được duyệt</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-emailsample-button-toolbar"></div>
+                    <div class="lable-emailsample-button-toolbar">Mẫu email</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-chooseuser-button-toolbar"></div>
+                    <div class="lable-chooseuser-button-toolbar">Chọn người dùng QLTG</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 6.quản lí đi muộn về sớm-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương-Thuế-Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí thời gian</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Đăng kí đi muộn, về sớm</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Chờ duyệt</option>
+                        <option>Đã được duyệt</option>
+                        <option>Không được duyệt</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-emailsample-button-toolbar"></div>
+                    <div class="lable-emailsample-button-toolbar">Gửi email</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-chooseuser-button-toolbar"></div>
+                    <div class="lable-chooseuser-button-toolbar">Chọn người dùng QLTG</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 7.quản lí làm bù-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí thời gian</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí làm bù</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Chờ duyệt</option>
+                        <option>Đã được duyệt</option>
+                        <option>Không được duyệt</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-emailsample-button-toolbar"></div>
+                    <div class="lable-emailsample-button-toolbar">Gửi email</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 8.bảng tổng hợp nghỉ phép-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí thời gian</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng tổng hợp nghỉ phép</div>
+            </div>
+        </div>
+        <div class="misa-pannel-2  inline">
+            <div class="after-file">Bảng tổng hợp nghỉ phép năm 2018</div>
+            <div class="right-misa-pannel  inline">
+                <!--<div class="vertical-line-misapannel"></div>-->
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+                <div id="lable-yeartime">Năm</div>
+                <div><input id="yeartime" type="number" value="2018" /></div>
+            </div>
+
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-createtable-button-toolbar"></div>
+                    <div class="lable--button-toolbar">Tạo bảng</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-save-button-toolbar"></div>
+                    <div class="lable-save-button-toolbar">Cất</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-stop-button-toolbar"></div>
+                    <div class="lable-stop-button-toolbar">Hoãn</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 9.chấm công chi tiết theo thười gian-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Chấm công</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Chấm công chi tiết theo thời gian</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 10.chấm công tổng hợp theo thời gian-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Chấm công</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Chấm công tổng hợp theo thời gian</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-workstandartsetting-button-toolbar"></div>
+                    <div class="lable-workstandartsetting-button-toolbar">Thiết lập số công chuẩn</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 11.bảng lương-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng lương</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-lock-unlock-button-toolbar"></div>
+                    <div class="lable-lock-unlock-button-toolbar">Khóa/Mở khóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-print-button-toolbar"></div>
+                    <div class="lable-print-button-toolbar">In</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 12.bảng tổng hợp công nợ-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng tổng hợp công nợ</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 13.bảng chi trả tiền lương-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng chi trả tiền lương</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-payment-button-toolbar"></div>
+                    <div class="lable-payment-toolbar">Thanh toán</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-paymentcancer-button-toolbar"></div>
+                    <div class="lable-paymentcancer-button-toolbar">Hủy thanh toán</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <div class="icon-more-toolbar"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- 14.Bảng tạm ghi nợ lương-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng tạm ghi nợ lương</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--15.bảng tổng hợp ghi nợ nhân viên-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng tổng hợp ghi nợ nhân viên</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--16. bảng thu nhập khác-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng thu nhập khác</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--17. bảng khấu trừ khác-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lương</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảng khấu trừ khác</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!--18.tạm tính thuế-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Thuế</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Tạm tính thuế</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-taxsetting-button-toolbar"></div>
+                    <div class="lable-taxsetting-button-toolbar">Thiết lập thông tin thuế</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--19.quyết toán thuế-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Thuế</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quyết toán thuế</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+            </div>
+        </div>
+    </div>
+    
+
+    <!--20.tờ khai quyết toán thuế-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Thuế</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Tờ khai quyết toán thuế</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 21.khái báo bảo hiểm-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Khai báo bảo hiểm</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-taxsetting-button-toolbar"></div>
+                    <div class="lable-taxsetting-button-toolbar">Thiết lập đăng kí KCB</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--22.thanh toán bảo hiểm-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Thanh toán bảo hiểm</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--23.hồ sơ bảo hiểm-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Lương - Thuế - Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Bảo hiểm</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Hồ sơ bảo hiểm</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+            <div class="vertical-line-misapannel"></div>
+            <div>
+                <select id="choose-contract" class="right-right">
+                    <option>Tất cả</option>
+                    <option>Đang tham gia</option>
+                    <option>Giảm tạm thời</option>
+                    <option>Giảm hẳn</option>
+                </select>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--24.kế hoạch tuyển dụng-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tuyển dụng</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Kế hoạch tuyển dụng</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div><input id="yeartime2" type="number" value="2018" /></div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 25. đợt tuyển dụng-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tuyển dụng - Tiếp nhận</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Tuyển dụng</div>
+
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 26. nguồn dự trữ-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tuyển dụng - Tiếp nhận</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Nguồn dự trữ</div>
+
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--27. hồ sơ vãng lai-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tuyển dụng - Tiếp nhận</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Hồ sơ vãng lai</div>
+
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--28.tiếp nhận-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tuyển dụng - Tiếp nhận</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Tiếp nhận</div>
+
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--29.khen thưởng-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tuyển dụng - Tiếp nhận</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Khen thưởng</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-print-button-toolbar"></div>
+                    <div class="lable-print-button-toolbar">In</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--30.sự cố-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tuyển dụng - Tiếp nhận</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Sự cố</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-print-button-toolbar"></div>
+                    <div class="lable-print-button-toolbar">In</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <!--31.tổng hợp nhu cầu đào tạo-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Đào tạo</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Tổng hợp nhu cầu đào tạo</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Tạo khóa đào tạo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--32.kế hoạch đào tạo-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Đào tạo</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Kế hoạch đào tạo</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--33.khóa đào tạo-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Đào tạo</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Khóa đào tạo</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-print-button-toolbar"></div>
+                    <div class="lable-print-button-toolbar">In</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--34.phúc lợi-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Đánh giá - Đào tạo - Phúc lợi</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file"> Phúc lợi</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-surveyresult-button-toolbar"></div>
+                    <div class="lable-surveyresult-button-toolbar">Kết quả khảo sát</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--35.nhân viên đi công tác-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Thủ tục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Nhân viên đi công tác</div>
+
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Đang tham gia</option>
+                        <option>Giảm tạm thời</option>
+                        <option>Giảm hẳn</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-emailsample-button-toolbar"></div>
+                    <div class="lable-emailsample-button-toolbar">Mẫu email</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <!--<div class="vertical-line"></div>-->
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <!--36.đồng phục và bảo hộ-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Thủ tục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Đồng phục và bảo hộ</div>
+
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-standartsetting-button-toolbar"></div>
+                    <div class="lable-standartsetting-button-toolbar">Thiết lập định mức</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--37.thôi việc-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Thủ tục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Thôi việc</div>
+
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Đang làm thủ tục thôi việc</option>
+                        <option>Đã nghỉ việc</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-completeproceed-button-toolbar"></div>
+                    <div class="lable-completeproceed-button-toolbar">Hoàn thành thủ tục</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-updateproceed-button-toolbar"></div>
+                    <div class="lable-updateproceed-button-toolbar">Cập nhật thôi việc</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-report-button-toolbar"></div>
+                    <div class="lable-report-button-toolbar">Báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-sentemail-button-toolbar"></div>
+                    <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-quicklink-button-toolbar"></div>
+                    <div class="lable-quicklink-button-toolbar">Liên kết nhanh</div>
+                </div>
+                <!--<div class="vertical-line"></div>-->
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+                <!--<div class="icon-more-toolbar"></div>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--38.danh mục-> công việc -> cơ cấu tổ chức-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Cơ cấu tổ chức</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--39.vị trí công việc-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Vị trí công việc</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-standartsetting-button-toolbar"></div>
+                    <div class="lable-standartsetting-button-toolbar">Thiết lập bậc lương</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--40. vai trò công việc-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Vai trò công việc</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-cvdescription-button-toolbar"></div>
+                    <div class="lable-cvdescription-button-toolbar">Xem miêu tả bản CV</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--41. danh mục -> lương -> khoản lương-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Khoản lương</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--42.lí do nghỉ-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Lí do nghỉ</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--43.lí hiệu chấm công-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Ký hiệu chấm công</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--44.ca làm việc-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Ca làm việc</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--45.sản phẩm-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Sản phẩm</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--46.ngạch bậc lương-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Ngạch bậc lương</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-standartsetting-button-toolbar"></div>
+                    <div class="lable-standartsetting-button-toolbar">Thiết lập ngầm định</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar" style="width:140px">Thay đổi lương tối thiểu</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-save-button-toolbar"></div>
+                    <div class="lable-save-button-toolbar">Cất</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-stop-button-toolbar"></div>
+                    <div class="lable-stop-button-toolbar">Hoãn</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--47. biểu tính thuế thu nhập-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Biểu tính thuế thu nhập</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--48.danh mục -> khác ->nhà cung cấp-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Nhà cung cấp</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--49.Đồng phục và bảo hộ lao động-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Đồng phục và bảo hộ lao động</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--50. cấp độ-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Cấp độ</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--51. kỹ năng-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Kỹ năng</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--52.tiêu chí đánh giá-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Tiêu chí đánh giá</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--53.danh sách thủ tục-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Danh sách thủ tục</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--54.Danh sách nơi đăng ký khám chữa bệnh-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Danh sách nơi đăng ký khám chữa bệnh</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--55. thiết lập mẫu trộn-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Danh mục</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Thiết lập mẫu trộn</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <!--<div class="icon--button-toolbar"></div>-->
+                    <div class="lable-writesample-button-toolbar">Soạn mẫu</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-tool-button-toolbar"></div>
+                    <div class="lable-tool-button-toolbar">Tiện ích</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--56.Hệ thống -> quản lí người dùng-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Hệ thống</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Quản lí người dùng</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Đã được kích hoạt</option>
+                        <option>Chưa được kích hoạt</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--57. vai trò và quyền hạn-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Hệ thống</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Vai trò và quyền hạn</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-add-button-toolbar"></div>
+                    <div class="lable-add-button-toolbar">Thêm</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <!--<div class="icon--button-toolbar"></div>-->
+                    <div class="lable-decentralization-button-toolbar">Phân quyền</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--58. nhật kí truy cập-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Hệ thống</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Nhật kí truy cập</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-view-button-toolbar"></div>
+                    <div class="lable-view-button-toolbar">Xem</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-export-button-toolbar"></div>
+                    <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-refresh-button-toolbar"></div>
+                    <div class="lable-refresh-button-toolbar">Nạp</div>
+                    <div class="icon-split-button-arrow"></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--59. Danh bạ-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tiện ích</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Danh bạ</div>
+            </div>
+            <div class="right-misa-pannel  inline">
+                <div class="vertical-line-misapannel"></div>
+                <div class="right-left">
+                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
+                    <datalist id="bophans" name="bophan">
+                        <option value="Công ty Cổ phần MISA">
+                        <option value="Phòng hành chính tổng hợp">
+                        <option value="Trung tâm phát triển phần mềm">
+                    </datalist>
+                </div>
+                <div class="vertical-line-misapannel"></div>
+                <div>
+                    <select id="choose-contract" class="right-right">
+                        <option>Tất cả</option>
+                        <option>Đang làm việc</option>
+                        <option>Đã nghỉ việc</option>
+                        <option>Đã kích hoạt tài khoản</option>
+                        <option>Chưa kích hoạt tài khoản</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="left-toolbar">
+                    <div class="button-toolbar">
+                        <div class="icon-sentemail-button-toolbar"></div>
+                        <div class="lable-sentemail-button-toolbar">Gửi email hàng loạt</div>
+                    </div>
+                    <div class="button-toolbar">
+                        <div class="icon-export-button-toolbar"></div>
+                        <div class="lable-export-button-toolbar">Xuất khẩu</div>
+                        <div class="icon-split-button-arrow"></div>
+                    </div>
+                    <div class="button-toolbar">
+                        <div class="icon-refresh-button-toolbar"></div>
+                        <div class="lable-refresh-button-toolbar">Nạp</div>
+                        <div class="icon-split-button-arrow"></div>
+                    </div>
+                    <div class="button-toolbar">
+                        <div class="icon-reply-button-toolbar"></div>
+                        <div class="lable-reply-button-toolbar">Phản hồi</div>
+                    </div>
+                    <div class="button-toolbar">
+                        <div class="icon-help-button-toolbar"></div>
+                        <div class="lable-help-button-toolbar">Giúp</div>
+                    </div>
+                    <!--<div class="lable--button-toolbar"></div>-->
+                </div>
+                <div class="right-toolbar">
+                    <div id="all-alphabet">Tất cả</div>
+                    <div id="alphabet" class="inline">
+                        <div class="icon-back-active"></div>
+                        <div id="all-character" class="inline">
+                            <div id="character-a" class="character-alphabet">A</div>
+                            <div id="character-b" class="character-alphabet">B</div>
+                            <div id="character-c" class="character-alphabet">C</div>
+                            <div id="character-d" class="character-alphabet">D</div>
+                            <div id="character-e" class="character-alphabet">E</div>
+                            <div id="character-f" class="character-alphabet">F</div>
+                            <div id="character-g" class="character-alphabet">G</div>
+                            <div id="character-h" class="character-alphabet">H</div>
+                            <div id="character-i" class="character-alphabet">I</div>
+                            <div id="character-j" class="character-alphabet">J</div>
+                            <div id="character-k" class="character-alphabet">K</div>
+                            <div id="character-l" class="character-alphabet">L</div>
+                            <div id="character-m" class="character-alphabet">M</div>
+                            <div id="character-n" class="character-alphabet">N</div>
+                            <div id="character-o" class="character-alphabet">O</div>
+                            <div id="character-p" class="character-alphabet">P</div>
+                            <div id="character-q" class="character-alphabet">Q</div>
+                            <div id="character-r" class="character-alphabet">R</div>
+                            <div id="character-s" class="character-alphabet">S</div>
+                            <div id="character-t" class="character-alphabet">T</div>
+                            <div id="character-u" class="character-alphabet">U</div>
+                            <div id="character-v" class="character-alphabet">V</div>
+                            <div id="character-w" class="character-alphabet">W</div>
+                            <div id="character-x" class="character-alphabet">X</div>
+                            <div id="character-y" class="character-alphabet">Y</div>
+                            <div id="character-z" class="character-alphabet">Z</div>
+                        </div>
+                        <div class="icon-next-active"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--60. báo cáo nhanh-->
+    <div class="top-container">
+        <div class="misa-pannel">
+            <div class="left-misa-pannel  inline">
+                <div class="prev-file">Tiện ích</div>
+                <div class="icon-ar-right"></div>
+                <div class="after-file">Báo cáo nhanh</div>
+            </div>
+        </div>
+        <div class="wrap-toolbar">
+            <div class="toolbar">
+                <div class="button-toolbar">
+                    <div class="icon-createtable-button-toolbar"></div>
+                    <div class="lable--button-toolbar" style="width:80px;">Tạo báo cáo</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-delete-button-toolbar"></div>
+                    <div class="lable-delete-button-toolbar">Xóa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-edit-button-toolbar"></div>
+                    <div class="lable-edit-button-toolbar">Sửa</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-save-button-toolbar"></div>
+                    <div class="lable-save-button-toolbar">Cất</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-stop-button-toolbar"></div>
+                    <div class="lable-stop-button-toolbar">Hoãn</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="button-toolbar">
+                    <div class="icon-reply-button-toolbar"></div>
+                    <div class="lable-reply-button-toolbar">Phản hồi</div>
+                </div>
+                <div class="button-toolbar">
+                    <div class="icon-help-button-toolbar"></div>
+                    <div class="lable-help-button-toolbar">Giúp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<!--58-->
+    <!--<!--<div class="top-container">
+        <div class="misa-pannel">
+
+        </div>
+    </div>
+    <div class="wrap-toolbar">
+        <div class="toolbar">
+            <div class="icon--button-toolbar"></div>
+            <div class="lable--button-toolbar"></div>
+        </div>
+    </div>
+
+    <!--59-->
+    <!--<div class="top-container">
+        <div class="misa-pannel">
+
+        </div>
+    </div>
+    <div class="wrap-toolbar">
+        <div class="toolbar">
+            <div class="icon--button-toolbar"></div>
+            <div class="lable--button-toolbar"></div>
+        </div>
+    </div>-->
+    <!--60-->
+    <!--<div class="wrap-toolbar">
+        <div class="toolbar">
+            <div class="icon--button-toolbar"></div>
+            <div class="lable--button-toolbar"></div>
+        </div>
+    </div>  -->
+    <!--<div class="wrap-toolbar">
+        <div class="toolbar">
+            <div class="icon--button-toolbar"></div>
+            <div class="lable--button-toolbar"></div>
+        </div>
+    </div>-->
+
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/index.js"></script>
+</body>
+</html>

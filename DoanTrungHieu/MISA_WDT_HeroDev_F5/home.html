@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <link REL="SHORTCUT ICON" HREF="Contents/Images/shortcut.png">
     <title>AMIS.VN</title>
-    <link href="CSS/home.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="CSS/home.css" />
     <link rel="stylesheet" type="text/css" href="CSS/amis.css">
+    <link rel="stylesheet" type="text/css" href="CSS/box-content.css">
+    <link rel="stylesheet" type="text/css" href="CSS/addBox.css">
 </head>
 <body>
     <div class="menu">
@@ -146,7 +148,7 @@
                             <img src="Contents/Images/recruitment.png" />
                         </div>
                         <div class="menu-text menu-right">
-                            Tuyển dụng - tiếp nhận
+                            Tuyển dụng - Tiếp nhận
                             <span class="icon-menu-dropdown"></span>
                         </div>
                     </div>
@@ -533,7 +535,6 @@
                 </div>
             </div>
             
-            <!-- <div class="nav-panel-l-r"></div> -->
 
             <div class="nav-right" style="display:flex;">
                 <div class="r-version">
@@ -587,8 +588,1988 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <div class="box-content">
+        <div class="box-title">
+        
+        </div>
+        <div class="box-body">
+            <div class="box-body-frame">
+                <div class="general-information-header" style="display: flex;">
+                    <div>1. Thông tin chung</div>
+                    <div class="G-I-header-line"></div>
+                </div>
+                <div class="general-information-body">
+                    <div class="G-I-body-seft">
+                        <div class="G-I-body-seft-img-user">
+                            <img src="Contents/Images/ImageHandler (1).png">
+                            <button class="btn-choser" id="upfile">Thêm ảnh</button>
+                            <input type="file" name="file-up" id="file-up" accept=".jpg, .png, .jpeg" style="display: none;">
+                        </div>
+
+                        <div class="G-I-body-seft-center">
+                            <div class="div-form-input">
+                                <div class="label-input">Mã nhân viên
+                                    <span class="text-note-obligatory">(*)</span>
+                                </div>
+                                <input class="form-input" requiredInput="true" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Họ và đệm</div>
+                                <input class="form-input" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Tên</div>
+                                <input class="form-input" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Họ và tên
+                                    <span class="text-note-obligatory">(*)</span>
+                                </div>
+                                <input class="form-input" requiredInput="true" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Giới tính</div>
+                                <select name="" id="" class="form-input">
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                </select>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Ngày sinh</div>
+                                <input class="form-input date-input" type="date"></input>
+                            </div>
+                        </div>
+
+                        <div class="G-I-body-seft-right">
+                            <div class="div-form-input">
+                                <div class="label-input">Địa chỉ</div>
+                                <textarea class="form-input form-adsress" type="text"></textarea>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Điện thoại</div>
+                                <input class="form-input" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Email</div>
+                                <input class="form-input" type="text"></input>
+                            </div>
+
+                            <div class="div-form-input">
+                                <div class="label-input">Vị trí công việc
+                                    <span class="text-note-obligatory">(*)</span>
+                                </div>
+                                <div class="select-more">
+                                    <select requiredInput="true" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>NV0001-Giám đốc</option>
+                                        <option>NV0002-Trưởng phòng</option>
+                                        <option>NV0003-Nhân viên hành chính</option>
+                                        <option>NV0004-Nhân viên PTPM</option>
+                                        <option>NV0005-Nhân viên</option>
+                                        <option>VT000001-Trưởng phòng Hành chính tổng hợp</option>
+                                    </select>
+                                    <div class="select-more-img" id="job-position">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Đơn vị công tác
+                                    <span class="text-note-obligatory">(*)</span>
+                                </div>
+                                <div class="select-more">
+                                    <select requiredInput="true" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>Công ty Cổ phần MISA</option>
+                                        <option>MISA-Phòng hành chính tổng hợp</option>
+                                        <option>MISA-Trung tâm phát triển phần mềm</option>
+                                    </select>
+                                    <div class="select-more-img" id="work-unit">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="G-I-body-identification">
+                        <div class="G-I-body-id-left">
+                            <label><strong>Chứng minh nhân dân/Thẻ căn cước</strong></label>
+                            <div class="div-form-input" style="margin-top : 15px;">
+                                <div class="label-input">Số</div>
+                                <input class="form-input" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Ngày cấp</div>
+                                <input class="form-input date-input" type="date"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Nơi cấp</div>
+                                <select name="" id="" class="form-input" >
+                                    <option></option>
+                                    <option>Hải Phòng</option>
+                                    <option>Hà Nội</option>
+                                    <option>Hồ Chí Minh</option>
+                                    <option>Đà Nẵng</option>
+                                    <option>An Giang</option>
+                                    <option>Bà rịa-Vũng tàu</option>
+                                    <option>Cần Thơ</option>
+                                    <option>Huế</option>
+                                    <option>Hòa Bình</option>
+                                    <option>Thanh Hóa</option>
+                                </select>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Ngày hết hạn</div>
+                                <input class="form-input date-input" type="date"></input>
+                            </div>
+                        </div>
+                        <div class="G-I-body-id-right">
+                            <label><strong>Hộ chiếu</strong></label>
+                            <div class="div-form-input" style="margin-top : 15px;">
+                                <div class="label-input">Số</div>
+                                <input class="form-input" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Ngày cấp</div>
+                                <input class="form-input date-input" type="date"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Nơi cấp</div>
+                                <input class="form-input" type="text"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Ngày hết hạn</div>
+                                <input class="form-input date-input" type="date"></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="G-I-body-acedemic-level">
+                        <div class="G-I-body-ace-left">
+                            <label><strong>Trình độ/Bằng cấp</strong></label>
+                            <div class="div-form-input" style="margin-top : 15px;">
+                                <div class="label-input">Trình độ văn hóa</div>
+                                <input class="form-input" type="text" placeholder="Nhập trình độ văn hóa, ví dụ 12/12"></input>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Trình độ đào tạo</div>
+                                <div class="select-more" >
+                                    <select name=""  class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>Đại học</option>
+                                        <option>Cao đẳng</option>
+                                        <option>Trung cấp</option>
+                                        <option>Thạc sĩ</option>
+                                        <option>Tiến sĩ</option>
+                                        <option>Nghề</option>
+                                        <option>Cao đẳng nghề</option>
+                                        <option>Trung cấp nghề</option>
+                                        <option>Sơ cấp nghề</option>
+                                    </select>
+                                    <div class="select-more-img" id="degree-training">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Nơi đào tạo</div>
+                                <div class="select-more">
+                                    <select name="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>HV Tài chính</option>
+                                        <option>ĐH Bách khoa</option>
+                                        <option>ĐH Quốc gia</option>
+                                        <option>ĐH Thương mại</option>
+                                        <option>ĐH Ngoại thương</option>
+                                        <option>ĐH FPT</option>
+                                        <option>ĐH Hà nội</option>
+                                        <option>HV Ngân hàng</option>
+                                    </select>
+                                    <div class="select-more-img" id="training-places">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Khoa</div>
+                                <div class="select-more">
+                                    <select name="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>Bảo hiểm</option>
+                                        <option>Dệt may</option>
+                                        <option>Kế toán</option>
+                                        <option>Kiểm toán</option>
+                                        <option>Kinh tế quản lí</option>
+                                        <option>Ngoại ngữ</option>
+                                        <option>Ngân hàng</option>
+                                        <option>Quản trị kinh doanh</option>
+                                    </select>
+                                    <div class="select-more-img" id="faculty-training">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Chuyên ngành</div>
+                                <div class="select-more">
+                                    <select name="" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>Công nghệ phần mềm</option>
+                                        <option>Kế toán</option>
+                                        <option>Kiểm toán</option>
+                                        <option>Ngân hàng</option>
+                                        <option>Hệ thống thông tin</option>
+                                    </select>
+                                    <div class="select-more-img" id="specialized">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Năm tốt nghiệp</div>
+                                <input class="form-input date-input" id="up-down-year">
+                                <div class="up-down-year">
+                                    <div style="cursor: pointer;height: 14.5px;width: 16px" id="number-up">
+                                        <img src="Contents/Images/number-up.png">
+                                    </div>
+                                    <div style="cursor: pointer;height: 14.5px;width: 16px;" id="number-down">
+                                        <img src="Contents/Images/number-down.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Xếp loại</div>
+                                <div class="select-more">
+                                    <select name="" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    
+                                        <option>Khá</option>
+                                        <option>Giỏi</option>
+                                        <option>Trung bình khá</option>
+                                    </select>
+                                    <div class="select-more-img" id="classification">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Nghề nghiệp</div>
+                                <div class="select-more">
+                                    <select name="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>Bác sỹ</option>
+                                        <option>Công nhân</option>
+                                        <option>Kế toán</option>
+                                        <option>Kỹ sư</option>
+                                        <option>Lái xe</option>
+                                        <option>Nông dân</option>
+                                        <option>Y tá</option>
+
+                                    </select>
+                                    <div class="select-more-img" id="job-select">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="G-I-body-ace-right">
+                            <label><strong>Thành phần gia đình</strong></label>
+
+                            <div class="div-form-input" style="margin-top : 15px;">
+                                <div class="label-input">TT Hôn nhân</div>
+                                <div class="select-more">
+                                    <select name="" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    
+                                        <option>Độc thân</option>
+                                        <option>Đã có gia đình</option>
+                                        <option>Li dị</option>
+                                        <option>Chưa xác định</option>
+                                    </select>
+                                    <div class="select-more-img" id="marital-status">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">TP gia đình</div>
+                                <div class="select-more">
+                                    <select name="" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>Bần nông</option>
+                                        <option>Bộ đội</option>
+                                        <option>Cố nông</option>
+                                        <option>Dân nghèo</option>
+                                        <option>Tiểu tư sản</option>
+                                        <option>Trung nông</option>
+                                    </select>
+                                    <div class="select-more-img" id="ingredient-family">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">TP bản thân</div>
+                                <div class="select-more">
+                                    <select name="" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    <option></option>
+                                        <option>Bộ đội</option>
+                                        <option>Chủ doanh nghiệp</option>
+                                        <option>Công chức</option>
+                                        <option>Công nhân</option>
+                                        <option>Nhà báo</option>
+                                        <option>Nhà văn</option>
+                                    </select>
+                                    <div class="select-more-img" id="ingredient-seft">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Dân tộc</div>
+                                <div class="select-more">
+                                    <select name="" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    
+                                        <option>Kinh</option>
+                                        <option>Thái</option>
+                                    </select>
+                                    <div class="select-more-img" id="nation">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input" >
+                                <div class="label-input">Tôn giáo</div>
+                                <div class="select-more">
+                                    <select name="" id="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    
+                                        <option>Không</option>
+                                        <option>Phật giáo</option>
+                                        <option>Tin lành</option>
+                                        <option>Hồi giáo</option>
+                                        <option>Thiên chúa</option>
+                                    </select>
+                                    <div class="select-more-img" id="religion">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-form-input">
+                                <div class="label-input">Quốc tịch</div>
+                                <div class="select-more">
+                                    <select name="" class="form-input" 
+                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">    
+                                        <option>Việt Nam</option>
+                                        <option>Angola</option>
+                                        <option>Afghanistan</option>
+                                        <option>Algeria</option>
+                                        <option>Japan</option>
+                                        <option>France</option>
+                                        <option>Spain</option>
+                                        <option>Mỹ</option>
+                                        <option>Bermuda</option>
+                                    </select>
+                                    <div class="select-more-img" id="nationality">
+                                        <img src="Contents/Images/more.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-body-frame">
+                
+            </div>
+            <div class="box-body-frame">
+                <div class="general-information-header" style="display: flex;">
+                    <div style="min-width: 170px">3. Thông tin công việc</div>
+                    <div class="G-I-header-line"></div>
+                    <div class="G-I-body-identification">
+                        <div class="G-I-body-id-left">
+                        </div>
+                        <div class="G-I-body-id-right">
+
+                        </div>
+                    </div>
+                </div>
+    </div>
+    
+    <!-- box-for-input -->
+    <div id="box-job-position" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Vị trí công việc</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 100px">Mã vị trí</th>
+                            <th style="width: 268px">Tên vị trí</th>
+                            <th style="width: 120px">Nhóm vị trí</th>
+                            <th style="width: 120px;border-right: none;">Chức danh</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>NV0001</td>
+                            <td>Giám đốc</td>
+                            <td>Lãnh đạo</td>
+                            <td style="border-right: none;">Giám đốc</td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>NV0002</td>
+                            <td>Trưởng phòng</td>
+                            <td>Quản lí</td>
+                            <td style="border-right: none;">Trưởng phòng</td>
+                        </tr>
+                        <tr>
+                            <td>NV0003</td>
+                            <td>Nhân viên hành chính</td>
+                            <td>Hành chính</td>
+                            <td style="border-right: none;">Nhân viên</td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>VT000001</td>
+                            <td>Trưởng phòng Hành chính tổng hợp</td>
+                            <td>Quản lý</td>
+                            <td style="border-right: none;">Trưởng phòng</td>
+                        </tr>
+                        <tr>
+                            <td>NV0004</td>
+                            <td>Nhân viên PTPM</td>
+                            <td>Công nhân</td>
+                            <td style="border-right: none;">Nhân viên</td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>NV0005</td>
+                            <td>Nhân viên</td>
+                            <td>Công nhân</td>
+                            <td style="border-right: none;">Nhân viên</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-work-unit" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Đơn vị công tác</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 230px">Tên đơn vị</th>
+                            <th style="width: 80px">Mã đơn vị</th>
+                            <th style="width: 150px">Địa chỉ</th>
+                            <th style="width: 148px;border-right: none;">Cấp tổ chức</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Công ty Cổ phần MISA</td>
+                            <td>misatest11</td>
+                            <td></td>
+                            <td style="border-right: none;">Tổng công ty</td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Phòng hành chính tổng hợp</td>
+                            <td>HCTH</td>
+                            <td></td>
+                            <td style="border-right: none;">Phòng ban</td>
+                        </tr>
+                        <tr>
+                            <td>Trung tâm Phát triển phần mềm</td>
+                            <td>PTPM</td>
+                            <td></td>
+                            <td style="border-right: none;">Trung tâm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-degree-training" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Trình độ đào tạo</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Đã qua đào tạo</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody> 
+                        <tr>
+                            <td>Đại học</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Cao đẳng</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Trung cấp</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Thạc sĩ</td>
+                            <td class="chose-use"> 
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Tiến sĩ khoa học</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Tiến sĩ</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Nghề</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Cao đẳng nghề</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked> 
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Trung cấp nghề</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Sơ cấp nghề</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-training-places" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Nơi đào tạo</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 110px">Mã nơi đào tạo</th>
+                            <th style="width: 260px">Tên nơi đào tạo</th>
+                            <th style="width: 110px">Sử dụng</th>
+                            <th style="width: 136px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody> 
+                        <tr>
+                            <td>HTC</td>
+                            <td>HV Tài chính</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>BKA</td>
+                            <td>ĐH Bách khoa Hà nội</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>VNU</td>
+                            <td>ĐH Quốc gia Hà nội</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>TMU</td>
+                            <td>ĐH Thương mại</td>
+                            <td class="chose-use"> 
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>FTU</td>
+                            <td>ĐH Ngoại thương</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>FPT</td>
+                            <td>ĐH FPT</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>NHF</td>
+                            <td>ĐH Hà nội</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>VMU</td>
+                            <td>ĐH Hàng hải</td>
+                            <td class="chose-use">
+                                <input type="checkbox"> 
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>CKB</td>
+                            <td>CĐ Bách khoa Đà nẵng</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>C55</td>
+                            <td>CĐ Cần thơ</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-faculty-training" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Khoa đào tạo</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content" style="overflow-y: scroll;">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Bảo hiểm</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Dệt may</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Kế toán</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Kiểm toán</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Sư phạm kỹ thuật</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Thuế</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Kinh tế quản lí</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Ngoại ngữ</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Ngân hàng</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Quản trị kinh doanh</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ hóa học</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Quản trị kinh doanh</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ hóa học</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-specialized" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Chuyên ngành</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content" style="overflow-y: scroll;">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Công nghệ phần mềm</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Kế toán</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Kiểm toán</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Ngân hàng</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Hệ thống thông tin</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Điện tử viễn thông</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ hóa học</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Công nghệ chế tạo máy</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ dệt</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Kinh tế phát triển</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Kinh tế quốc tế</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Kỹ thuật hàng không</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Kỹ thuật tàu thủy</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Luật kinh doanh</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Ô tô</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-classification" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Xếp loại</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody> 
+                        <tr>
+                            <td>Khá</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Giỏi</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Trung bình khá</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Trung bình</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-job" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Nghề nghiệp</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Bác sĩ</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Công nhân</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Kế toán</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Kỹ sư</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Lái xe</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Nông dân</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Y tá</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-marital-status" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Tình trạng hôn nhân</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody> 
+                        <tr>
+                            <td>Độc thân</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Đã có gia đình</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Ly dị</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Chưa xác định</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-ingredient-family" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Thành phần gia đình</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content" style="overflow-y: scroll;">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Bần nông</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Bộ đội</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Cố nông</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Dân nghèo</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Tiểu tư sản</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Trung nông</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Địa chủ</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Phú nông</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Tiểu thương</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Tiểu chủ</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Tư sản</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Viên chức</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-ingredient-seft" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Thành phần bản thân</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Bộ đội</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Chủ doanh nghiệp</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Công chức</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Công nhân</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Nhà báo</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Nhà văn</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Nhân viên</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Nông dân</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Thợ thủ công</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Viên chức</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-nation" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Dân tộc</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content" style="overflow-y: scroll;">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Kinh</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Thái</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Ba na</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Bố y</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Chăm</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Dao</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Ê đê</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Gia Rai</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Hoa</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Lào</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Mông</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Mường</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Nùng</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Tày</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Hà nhì</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Xơ đăng</td>
+                            <td class="chose-use">
+                                <input type="checkbox">
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-religion" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Tôn giáo</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 280px">Tên</th>
+                            <th style="width: 140px">Sử dụng</th>
+                            <th style="width: 188px;border-right: none;">Ghi chú</th>
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>Không</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Cao đài</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Phật giáo</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Phật giáo hòa hảo</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Thiên chúa giáo</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>Tin lành</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                        <tr>
+                            <td>Hồi giáo</td>
+                            <td class="chose-use">
+                                <input type="checkbox" checked>
+                            </td>
+                            <td style="border-right: none;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="box-nationality" style="display: none;">
+        <div class="div-background-box-input"></div>
+        <div class="box-table-input">
+            <div class="bti-header">
+                <p>Quốc tịch</p>
+                <div class="max-close-box">
+                    <div class="maxsize"></div>
+                    <div class="close-box" title="Đóng"></div>
+                </div>
+            </div>
+            <div class="bti-content" style="overflow-y: scroll;">
+                <table class="bti-content-table" cellspacing="0px">
+                    <thead class="head-table">
+                        <tr>
+                            <th style="width: 168px">Mã</th>
+                            <th style="width: 300px">Tên</th>
+                            <th style="width: 140px;border-right: none">Sử dụng</th>
+                           
+                        </tr>
+                    </thead>
+                  
+                    <tbody>
+                        <tr>
+                            <td>VN</td>
+                            <td>Việt Nam</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>AO</td>
+                            <td>Angola</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AF</td>
+                            <td>Afghanistan</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>DZ</td>
+                            <td>Algeria</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JP</td>
+                            <td>Japan</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>FR</td>
+                            <td>France</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SP</td>
+                            <td>Spain</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>US</td>
+                            <td>America</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CN</td>
+                            <td>China</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>BM</td>
+                            <td>Bermuda</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox" checked>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CU</td>
+                            <td>Cuba</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>EG</td>
+                            <td>Egypt</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EE</td>
+                            <td>Estonia</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr class="bg-tr-ededed">
+                            <td>GA</td>
+                            <td>Gabon</td>
+                            <td class="chose-use" style="border-right: none;">
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bti-footer">
+                <button class="btn-bti-footer bg-help">
+                    <span>Giúp</span>
+                </button>
+                <button class="btn-bti-footer bg-select">
+                    <span>Chọn</span>
+                </button>
+                <button class="btn-bti-footer bg-add">
+                    <span>Thêm</span>
+                </button>
+                <button class="btn-bti-footer bg-repair">
+                    <span>Sửa</span>
+                </button>
+                <button class="btn-bti-footer bg-delete">
+                    <span>Xóa</span>
+                </button>
+                <button class="btn-bti-footer bg-close close-box">
+                    <span>Đóng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- finish-box -->
+
+    <script src="Scripts/jquery-3.3.1.js"></script>
     <script src="Scripts/home.js"></script>
     <script src="Scripts/amis.js"></script>
+    <script src="Scripts/addBox.js"></script>
 </body>
 </html>

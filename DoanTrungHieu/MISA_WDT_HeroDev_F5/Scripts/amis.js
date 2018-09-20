@@ -26,3 +26,20 @@ $('.r-ring').mouseleave(function() {
 	$('.r-ring').children('img').remove();
 	$('.r-ring').append('<img src="Contents/Images/notification.png">');	
 });
+
+
+//upadate
+var graduationYear = 2010;
+$('#number-up').click(function () {
+	graduationYear++;
+	$('#up-down-year').val(graduationYear) ;
+});
+$('#number-down').click(function () {
+	graduationYear--;
+	$('#up-down-year').val(graduationYear) ;
+});
+
+//upload image file
+$('#upfile').click(function () {
+	$('#file-up').trigger('click');
+});
