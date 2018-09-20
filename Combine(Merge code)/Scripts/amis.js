@@ -63,15 +63,16 @@ $('#number-down-insurance').click(function () {
 var bounty = 0;
 $('#number-up-bounty').click(function () {
     bounty++;
-    $('#up-down-bounty').val(bounty);
+    $('#up-down-bounty').val(bounty + ',00');
 });
 
 $('#number-down-bounty').click(function () {
     bounty--;
-    $('#up-down-bounty').val(bounty);
+    $('#up-down-bounty').val(bounty + ',00');
 });
 
 var absent = 0;
+$('#up-down-absent').val(absent);
 $('#number-up-absent').click(function () {
     absent++;
     $('#up-down-absent').val(absent);
@@ -83,14 +84,15 @@ $('#number-down-absent').click(function () {
 });
 
 var ratio = 0;
+$('#up-down-ratio').val(ratio+',00');
 $('#number-up-ratio').click(function () {
     ratio++;
-    $('#up-down-ratio').val(ratio);
+    $('#up-down-ratio').val(ratio + ',00');
 });
 
 $('#number-down-ratio').click(function () {
     ratio--;
-    $('#up-down-ratio').val(ratio);
+    $('#up-down-ratio').val(ratio + ',00');
 });
 
 //upload image file

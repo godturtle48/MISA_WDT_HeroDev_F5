@@ -1104,7 +1104,7 @@
                 <!--1.1 Thêm hồ sơ nhân viên-->
                 <div class="top-container" id="employee-file-add-button-pannel">
                     <div class="misa-pannel">
-                        <div class="left-misa-panel  inline">
+                        <div class="left-misa-pannel  inline">
                             <div class="prev-file">Hồ sơ nhân viên</div>
                             <div class="icon-ar-right"></div>
                             <div class="after-file">Thêm mới nhân viên</div>
@@ -1114,39 +1114,44 @@
                     <div class="wrap-toolbar">
                         <div class="toolbar">
 
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Cất">
                                 <div class="icon-save-button-toolbar"></div>
                                 <div class="lable-save-button-toolbar">Cất</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Cất & Đóng">
+                                <div class="icon-saveandclose-button-toolbar"></div>
+                                <div class="lable-savesaveandclose-button-toolbar" style="white-space: nowrap">Cất & Đóng</div>
+                            </div>
+                            <div class="button-toolbar" title="Cất & Thêm">
                                 <div class="icon-saveandadd-button-toolbar"></div>
                                 <div class="lable-savesaveandadd-button-toolbar">Cất & Thêm</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Hoãn">
                                 <div class="icon-stop-button-toolbar"></div>
                                 <div class="lable-stop-button-toolbar">Hoãn</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Thiết lập ngầm định">
                                 <div class="icon-standartsetting-button-toolbar"></div>
                                 <div class="lable-standartsetting-button-toolbar">Thiết lập ngầm định</div>
                             </div>
                             <div class="vertical-line"></div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Giúp">
                                 <div class="icon-help-button-toolbar"></div>
                                 <div class="lable-help-button-toolbar">Giúp</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Phản hồi">
                                 <div class="icon-reply-button-toolbar"></div>
                                 <div class="lable-reply-button-toolbar">Phản hồi</div>
                             </div>
                             <div class="vertical-line"></div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Đóng">
                                 <div class="icon-close-button-toolbar"></div>
                                 <div class="lable-close-button-toolbar">Đóng</div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="building-alert">
                 <div class="building-content">
@@ -2221,7 +2226,8 @@
                                 </div>
                                 <div class="div-form-input form-check">
                                     <div class="label-input"></div>
-                                    <input class="unchecked" type="checkbox" /> Tham gia công đoàn
+                                    <span class="unchecked"></span> 
+                                    <span style="margin: 9px 5px">Tham gia công đoàn</span>
                                 </div>
                                 <label><strong>Số ngày phép được hưởng</strong></label>
                                 <div class="div-form-input" style="margin-top: 15px;">
@@ -2238,7 +2244,8 @@
                                 </div>
                                 <div class="div-form-input form-check">
                                     <div class="label-input"></div>
-                                    <input class="checked" type="checkbox" /> Tự động tăng phép theo thâm niên
+                                    <span class="unchecked"></span> 
+                                    <span style="margin: 9px 5px">Tự động tăng phép theo thâm niên</span>
                                 </div>
                             </div>
                             <div class="G-I-body-sal-right">
@@ -2286,9 +2293,10 @@
                                     <div class="label-input">Ngày hết hạn</div>
                                     <input class="form-input date-input" type="date"></input>
                                 </div>
-                                <div class="div-form-input">
+                                <div class="div-form-input form-have-btn-checked">
                                     <div class="label-input"></div>
-                                    <input class="unchecked" type="checkbox" style="margin-right: 5px" /> Chỉ hiển thị năm sinh trên các báo cáo bảo hiểm
+                                    <span class="unchecked"></span> 
+                                    <span style="margin: 9px 5px"> Chỉ hiển thị năm sinh trên các báo cáo bảo hiểm </span>
                                 </div>
                             </div>
                         </div>
@@ -2304,7 +2312,7 @@
                             </tr>
                             <tr>
                                 <th>
-                                    <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                    <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-right: 0px;">
                                         <tr>
                                             <th class="employee-info-select-content">
                                                 <div class="employee-info-select-ion">*</div>
@@ -2321,14 +2329,14 @@
                                                     <div>Tùy chọn</div>
                                                 </div>
                                             </th>
-                                            <th><input style="width: 68px;" type="text" class="employee-info-noborder" /></th>
+                                            <th><input style="width: 69px;" type="text" class="employee-info-noborder" /></th>
                                             <th><div class="employee-info-down-ion"></div></th>
                                         </tr>
                                     </table>
 
                                 </th>
                                 <th>
-                                    <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                    <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-right: 0px;">
                                         <tr>
                                             <th class="employee-info-select-content">
                                                 <div class="employee-info-select-ion">*</div>
@@ -2356,12 +2364,12 @@
                         <table id="table-info-all-employees1" class="employee-info-tablecell" cellpadding="0" cellspacing="0">
                             <colgroup>
                                 <col style="width:121px">
-                                <col style="width:172px">
+                                <col style="width:173px">
                             </colgroup>
 
                             <tr class="tuan-anh-pointer" id="table-info-all-employees1-line1">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00772" style="border-top: 0px ">NVTCT00772</th>
+                                <th class="employee-info-box" title="Bùi Như Nấm" style="border-top: 0px ">Bùi Như Nấm </th>
                             </tr>
                             <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line2">
                                 <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
@@ -2418,7 +2426,7 @@
                                     </tr>
                                     <tr class="background1">
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;height: 33px">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">=</div>
@@ -2439,7 +2447,7 @@
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">=</div>
@@ -2453,14 +2461,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 77px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 79px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2477,14 +2485,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 81px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 82px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2501,14 +2509,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 150px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 151px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2532,7 +2540,7 @@
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2549,14 +2557,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 162px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 164px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2573,14 +2581,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 158px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 159px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2597,14 +2605,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 63px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 64px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2621,14 +2629,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 77px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 78px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2645,14 +2653,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 146px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 147px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2669,7 +2677,7 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 95px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 96px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
@@ -2677,7 +2685,7 @@
                                         </th>
                                 </thead>
                             </table>
-                            <table id="table-info-all-employees2" class="employee-info-tablecell" cellpadding="0" cellspacing="0">
+                            <table id="table-info-all-employees2" class="employee-info-tablecell" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
 
                                 <colgroup>
                                     <col style="width:79px">
@@ -2861,6 +2869,7 @@
                             <div id="show-info-toolbar-icon" class="employee-info-inline"></div>
                             <div id="show-info-toolbar-detail">
                                 <div id="show-info-left-col" class="employee-info-inline">
+                                    <div id="show-info-toolbar-detail-Litem2" class="show-info-toolbar-detail-Litem2">1. THÔNG TIN CHUNG</div>
                                     <div id="show-info-toolbar-detail-Litem2" class="show-info-toolbar-detail-Litem2">2. THÔNG TIN LIÊN HỆ</div>
                                     <div id="show-info-toolbar-detail-Litem3" class="show-info-toolbar-detail-Litem2">3. GIA ĐÌNH</div>
                                     <div id="show-info-toolbar-detail-Litem4" class="show-info-toolbar-detail-Litem2">4. HỢP ĐỒNG LAO ĐỘNG</div>
@@ -2877,6 +2886,7 @@
                                     <div id="show-info-toolbar-detail-Litem12" class="show-info-toolbar-detail-Litem2">15. ĐÁNH GIÁ</div>
                                 </div>
                                 <div id="show-info-right-col" class="employee-info-inline">
+                                    <div id="show-info-toolbar-detail-Ritem1" class="show-info-toolbar-detail-Litem2">16. QUÁ TRÌNH ĐÀO TẠO</div>
                                     <div id="show-info-toolbar-detail-Ritem1" class="show-info-toolbar-detail-Litem2">17. BẰNG CẤP</div>
                                     <div id="show-info-toolbar-detail-Ritem2" class="show-info-toolbar-detail-Litem2">18. CHỨNG CHỈ</div>
                                     <div id="show-info-toolbar-detail-Ritem3" class="show-info-toolbar-detail-Litem2">19. KINH NGHIỆM LÀM VIỆC</div>
