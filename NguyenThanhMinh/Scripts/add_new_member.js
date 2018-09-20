@@ -57,8 +57,29 @@
     });
 
     $('.button-country').click(function () {
+        $(this).addClass('processing');
+        $("#table").load("Views/table-country.html", function () {
+
+            $(".btn-close").click(function () {
+                $('.processing').removeClass('processing');
+                $('#table').empty();
+            });
+            $(".button-close-madal").click(function () {
+                $('.processing').removeClass('processing');
+                $('#table').empty();
+            });
+        });
+    });
+
+    $('.button-relationship').click(function () {
+        $(this).addClass('processing');
         $("#table").load("Views/table-relationship.html", function () {
             $(".btn-close").click(function () {
+                $('.processing').removeClass('processing');
+                $('#table').empty();
+            });
+            $(".button-close-madal").click(function () {
+                $('.processing').removeClass('processing');
                 $('#table').empty();
             });
         });

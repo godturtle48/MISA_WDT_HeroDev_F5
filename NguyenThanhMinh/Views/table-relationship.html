@@ -4,7 +4,7 @@
     <div id="modal" class="modal-contents modal-size">
         <div class="modal-header">
             <div class="modal-title">
-                Trình độ đào tạo
+                Quan hệ gia đình
             </div>
             <div class="modal-button">
                 <div id="btn-maxsize-restore" class="btn-maxsize">
@@ -14,207 +14,40 @@
             </div>
         </div>
         <div class="modal-body">
-            <div class="header-table">
-                <table>
+            <table class="table-select-relationship">
+                <thead>
                     <tr>
-                        <th class="column-200px">Mã</th>
                         <th>Tên</th>
-                        <th class="column-200px">Sử dụng</th>
+                        <th class="tr-th-2">Nhóm quan hệ</th>
+                        <th>Ghi chú</th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text"/>
+                            <input type="text" />
                         </td>
                         <td>
                             <input type="text" />
                         </td>
                         <td>
-                            <span class="checked"></span>
+                            <input type="text" />
                         </td>
                     </tr>
-                </table>
-            </div>
-            <div class="body-table">
-                <table>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            VN
-                        </td>
-                        <td>
-                            Việt Nam
-                        </td>
-                        <td>
-                            <span class="unchecked"></span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                </thead>
+                <tbody id="table-list-relationship">
+                </tbody>
+            </table>
         </div>
         <div class="modal-footer">
             <div class="button">
                 <div class="icon-help"></div>
                 <div class="text">Giúp</div>
             </div>
-            <div class="box-right">
+            <div class="box-right button-madal-select-country">
                 <div class="button button-select">
                     <div class="icon-select"></div>
                     <div class="text">Chọn</div>
                 </div>
-                <div class="button">
+                <div class="button button-close-madal">
                     <div class="icon-close"></div>
                     <div class="text">Đóng</div>
                 </div>

@@ -858,11 +858,12 @@
                                     Nơi sinh
                                 </div>
                                 <div class="box-input">
-                                    <textarea rows="3"></textarea>
+                                    <textarea rows="3" readonly title="Thông tin được tự động cập nhập từ các trường bên trên"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="block block-right">
+                            <form id="form-address-right">
                             <div class="row-input">
                                 <div class="label-input title-block">
                                     Chỗ ở hiện nay
@@ -882,10 +883,10 @@
                                 </div>
                                 <div class="box-input">
                                     <div class="input-select input-select-three">
-                                        <input type="text" class="input-country"/>
+                                        <input type="text" class="input-country" />
                                         <span class="icon-drop-option">
                                         </span>
-                                        <span class="icon-dot-vertical">
+                                        <span class="icon-dot-vertical button-country">
                                         </span>
                                     </div>
                                     <div class="list-option country">
@@ -912,11 +913,12 @@
                                 </div>
                                 <div class="box-input">
                                     <div class="input-select input-select-two">
-                                        <input type="text" class="input-city"/>
+                                        <input type="text" class="input-city" />
                                         <span class="icon-drop-option">
                                         </span>
                                     </div>
-                                    
+                                    <div class="list-option city">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -929,6 +931,8 @@
                                         <span class="icon-drop-option">
                                         </span>
                                     </div>
+                                    <div class="list-option wards">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-input">
@@ -937,7 +941,7 @@
                                 </div>
                                 <div class="box-input">
                                     <div class="input-select input-select-one">
-                                        <input type="text" class="input-village"/>
+                                        <input type="text" class="input-village" />
                                     </div>
                                 </div>
                             </div>
@@ -946,10 +950,12 @@
                                     Nơi sinh
                                 </div>
                                 <div class="box-input">
-                                    <textarea rows="3"></textarea>
+                                    <textarea rows="3" readonly title="Thông tin được tự động cập nhập từ các trường bên trên"></textarea>
                                 </div>
                             </div>
+                            </form>
                         </div>
+                        
                     </div>
                     <div class="first-block second-block last-block">
                         <div class="block block-left">
@@ -1034,8 +1040,8 @@
     <div id="table">
 
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    chec
     <script src="Scripts/data-country.js"></script>
     <script src="Scripts/home.js"></script>
     <script src="Scripts/amis.js"></script>

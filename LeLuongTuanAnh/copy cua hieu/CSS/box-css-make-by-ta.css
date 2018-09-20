@@ -1,0 +1,41 @@
+#box-table-input-ta-11 th{
+	height: 28px;
+	line-height: 26px;
+}
+#box-table-input-ta-12 th{
+	height: 28px;
+	line-height: 26px;
+	font-weight: normal;
+}
+#box-table-input-ta-12 tr:nth-child(even) {background: white;}
+#box-table-input-ta-12 tr:nth-child(even) {background: #F0F0F0;}
+#search-box-profile-remake-ta{
+	border: none;
+    width: 200px;
+    background-image: url(../Contents/Images/tree.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    outline: none;
+    margin-top: 5px;
+}
+#footer-in-tb1{
+	height: 28px;
+	border:1px solid #CFCFCF;
+	width: calc(100% - 35px);
+	line-height: 28px;
+	margin-left: 15px;
+
+}
+#box-table-input-ta-21 th{
+	height: 28px;
+	line-height: 26px;
+	overflow: auto;
+}
+.background-box-change-1{
+	width: 178px;
+	height: 28px;
+	border:1px solid #CFCFCF;
+	background-image: url(../Contents/Images/column-filter-none.png);
+	background-repeat: no-repeat;
+	background-position: 80px 5px;
+}
