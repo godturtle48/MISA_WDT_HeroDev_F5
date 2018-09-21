@@ -1,7 +1,6 @@
 .box-content {
     position: absolute;
     top: 50px;
-    /*left: 230px;*/
     width: calc(100vw - 230px);
     height: calc(100vh - 50px);
 }
@@ -13,11 +12,11 @@
         box-shadow: 0 0 6px rgb(136, 136, 136);
         border: 1px solid #ccc;
     }
-    .box-content .box-body{
-    	background-color: #fff;
-    	height: 100%;
-    	overflow: scroll;
-    	padding: 10px;
+    .box-content .box-body {
+        background-color: #fff;
+        height: calc(100vh - 117px);
+        overflow: scroll;
+        padding: 10px;
     }
     	.box-content .box-body .box-body-frame{
     		right: auto;

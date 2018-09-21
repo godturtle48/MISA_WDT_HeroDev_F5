@@ -45,9 +45,9 @@
                             <span class="icon-menu-dropdown"></span>
                         </div>
                     </div>
-                    <ul>
+                    <ul style="display: block">
                         <li id="profile-item">
-                            <div class="menu-li-ul-li">
+                            <div class="menu-li-ul-li" style="background: #EDA235">
                                 <div class="menu-icon menu-left">
                                 </div>
                                 <div class="menu-text menu-right">
@@ -1034,9 +1034,9 @@
                                     <option value="Trung tâm phát triển phần mềm">
                                 </datalist>
                                 <!--<option class="inactive-checkbox  inline"
-                        <input type="checkbox" />
-                        Hiển thị cơ cấu tổ chức đã ngừng theo dõi
-                    >-->
+                                    <input type="checkbox" />
+                                    Hiển thị cơ cấu tổ chức đã ngừng theo dõi
+                                >-->
 
                             </div>
                             <div class="vertical-line-misapannel"></div>
@@ -1104,7 +1104,7 @@
                 <!--1.1 Thêm hồ sơ nhân viên-->
                 <div class="top-container" id="employee-file-add-button-pannel">
                     <div class="misa-pannel">
-                        <div class="left-misa-panel  inline">
+                        <div class="left-misa-pannel  inline">
                             <div class="prev-file">Hồ sơ nhân viên</div>
                             <div class="icon-ar-right"></div>
                             <div class="after-file">Thêm mới nhân viên</div>
@@ -1114,39 +1114,44 @@
                     <div class="wrap-toolbar">
                         <div class="toolbar">
 
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Cất">
                                 <div class="icon-save-button-toolbar"></div>
                                 <div class="lable-save-button-toolbar">Cất</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Cất & Đóng">
+                                <div class="icon-saveandclose-button-toolbar"></div>
+                                <div class="lable-savesaveandclose-button-toolbar" style="white-space: nowrap">Cất & Đóng</div>
+                            </div>
+                            <div class="button-toolbar" title="Cất & Thêm">
                                 <div class="icon-saveandadd-button-toolbar"></div>
                                 <div class="lable-savesaveandadd-button-toolbar">Cất & Thêm</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Hoãn">
                                 <div class="icon-stop-button-toolbar"></div>
                                 <div class="lable-stop-button-toolbar">Hoãn</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Thiết lập ngầm định">
                                 <div class="icon-standartsetting-button-toolbar"></div>
                                 <div class="lable-standartsetting-button-toolbar">Thiết lập ngầm định</div>
                             </div>
                             <div class="vertical-line"></div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Giúp">
                                 <div class="icon-help-button-toolbar"></div>
                                 <div class="lable-help-button-toolbar">Giúp</div>
                             </div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Phản hồi">
                                 <div class="icon-reply-button-toolbar"></div>
                                 <div class="lable-reply-button-toolbar">Phản hồi</div>
                             </div>
                             <div class="vertical-line"></div>
-                            <div class="button-toolbar">
+                            <div class="button-toolbar" title="Đóng">
                                 <div class="icon-close-button-toolbar"></div>
                                 <div class="lable-close-button-toolbar">Đóng</div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="building-alert">
                 <div class="building-content">
@@ -1556,8 +1561,11 @@
                 </div>
 
                 <div class="contents">
+
                     <div class="form-info">
+                        <!--Form Contact Infomation-->
                         <div class="form-contact-info">
+                            <!--Contact header information-->
                             <div class="head-contact-info">
                                 <div class="title-contact-info">
                                     2. Thông tin liên hệ
@@ -1565,7 +1573,10 @@
                                 <div class="hr">
                                 </div>
                             </div>
+                            <!--End Contact header information-->
+                            <!--Khối thông tin liên hệ trực tiếp(Khối dầu tiên)-->
                             <div class="first-block">
+                                <!--Khối bên trái-->
                                 <div class="block block-left">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1638,6 +1649,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--Khối bên phải-->
                                 <div class="block block-right">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1677,7 +1689,10 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!--Khối thứ 2-->
                             <div class="first-block second-block">
+                                <!--Khối bên trái-->
                                 <div class="block block-left">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1691,11 +1706,13 @@
                                         <div class="label-input">
                                             Tỉnh/Thành phố
                                         </div>
-                                        <div class="box-input">
+                                        <div class="box-input" id="box-input-city">
                                             <div class="input-select input-select-two">
                                                 <input type="text" />
                                                 <span class="icon-drop-option">
                                                 </span>
+                                            </div>
+                                            <div class="list-option list-option-city">
                                             </div>
                                         </div>
                                     </div>
@@ -1708,6 +1725,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--khối bên phải-->
                                 <div class="block block-right">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1743,7 +1761,10 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!--Khối nhập thông tin địa chỉ người dùng-->
                             <div class="first-block second-block" id="form-address">
+                                <!--Khối trái-->
                                 <div class="block block-left">
                                     <div class="row-input">
                                         <div class="title-block">
@@ -1823,99 +1844,107 @@
                                             Nơi sinh
                                         </div>
                                         <div class="box-input">
-                                            <textarea rows="3"></textarea>
+                                            <textarea rows="3" readonly title="Thông tin được tự động cập nhập từ các trường bên trên"></textarea>
                                         </div>
                                     </div>
                                 </div>
+                                <!--khối phải-->
                                 <div class="block block-right">
-                                    <div class="row-input">
-                                        <div class="label-input title-block">
-                                            Chỗ ở hiện nay
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="form-check">
-                                                <span class="unchecked"></span>
-                                                <div class="label-check">
-                                                    Giống hộ khẩu thường trú
+                                    <form id="form-address-right">
+                                        <div class="row-input">
+                                            <div class="label-input title-block">
+                                                Chỗ ở hiện nay
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="form-check">
+                                                    <span class="unchecked"></span>
+                                                    <div class="label-check">
+                                                        Giống hộ khẩu thường trú
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Quốc gia
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-three">
-                                                <input type="text" class="input-country" />
-                                                <span class="icon-drop-option">
-                                                </span>
-                                                <span class="icon-dot-vertical">
-                                                </span>
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Quốc gia
                                             </div>
-                                            <div class="list-option country">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Tỉnh/Thành phố
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-two">
-                                                <input type="text" class="input-region" />
-                                                <span class="icon-drop-option">
-                                                </span>
-                                            </div>
-                                            <div class="list-option region">
+                                            <div class="box-input">
+                                                <div class="input-select input-select-three">
+                                                    <input type="text" class="input-country" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                    <span class="icon-dot-vertical button-country">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option country">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Quận/Huyện
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-two">
-                                                <input type="text" class="input-city" />
-                                                <span class="icon-drop-option">
-                                                </span>
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Tỉnh/Thành phố
                                             </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Xã/Phường
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-two">
-                                                <input type="text" class="input-wards" />
-                                                <span class="icon-drop-option">
-                                                </span>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-two">
+                                                    <input type="text" class="input-region" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option region">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input-long">
-                                            Số nhà/Đường phố/Thôn xóm
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-one">
-                                                <input type="text" class="input-village" />
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Quận/Huyện
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-two">
+                                                    <input type="text" class="input-city" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option city">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Nơi sinh
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Xã/Phường
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-two">
+                                                    <input type="text" class="input-wards" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option wards">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="box-input">
-                                            <textarea rows="3"></textarea>
+                                        <div class="row-input">
+                                            <div class="label-input-long">
+                                                Số nhà/Đường phố/Thôn xóm
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-one">
+                                                    <input type="text" class="input-village" />
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Nơi sinh
+                                            </div>
+                                            <div class="box-input">
+                                                <textarea rows="3" readonly title="Thông tin được tự động cập nhập từ các trường bên trên"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
+
+                            <!--Khối thông tin liên hệ khẩn cấp-->
                             <div class="first-block second-block last-block">
                                 <div class="block block-left">
                                     <div class="row-input">
@@ -1992,6 +2021,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--End contact infomation-->
                     </div>
                 </div>
 
@@ -2019,7 +2049,7 @@
                                             <option>NV0005-Nhân viên</option>
                                             <option>VT000001-Trưởng phòng Hành chính tổng hợp</option>
                                         </select>
-                                        <div class="select-more-img" id="job-position">
+                                        <div class="select-more-img" id="job-position-2">
                                             <img src="Contents/Images/more.png">
                                         </div>
                                     </div>
@@ -2055,7 +2085,7 @@
                                             <option>MISA-Phòng hành chính tổng hợp</option>
                                             <option>MISA-Trung tâm phát triển phần mềm</option>
                                         </select>
-                                        <div class="select-more-img" id="work-unit">
+                                        <div class="select-more-img" id="work-unit-2">
                                             <img src="Contents/Images/more.png">
                                         </div>
                                     </div>
@@ -2148,7 +2178,7 @@
                                         <span class="text-note-obligatory">(*)</span>
                                     </div>
                                     <div class="select-more">
-                                        <select requiredInput="true" id="" class="form-input"
+                                        <select requiredInput="true" id="excuse" class="form-input"
                                                 style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">
                                             <option></option>
                                             <option>Đang làm việc</option>
@@ -2166,6 +2196,41 @@
                                         </select>
                                         <div class="select-more-img" id="work-unit">
                                             <img src="Contents/Images/more.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absent-excuse" style="display: none">
+                                    <div class="div-form-input">
+                                        <div class="label-input">Lý do nghỉ</div>
+                                        <div class="select-more">
+                                            <select name="" class="form-input"
+                                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">
+                                                <option></option>
+                                                <option>Áp lực công việc quá lớn</option>
+                                                <option>Bị công ty bắt nghỉ việc</option>
+                                                <option>Các qui định trong công việc quá phức tạp</option>
+                                                <option>Cán bộ quản lí kém</option>
+                                                <option>Chế độ lương không phù hợp</option>
+                                            </select>
+                                            <div class="select-more-img" id="job-select">
+                                                <img src="Contents/Images/more.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="div-form-input">
+                                        <div class="label-input">Ngày nghỉ việc</div>
+                                        <input class="form-input date-input" type="date"></input>
+                                    </div>
+                                    <div class="div-form-input">
+                                        <div class="label-input">Người duyệt</div>
+                                        <div class="select-more">
+                                            <select name="" class="form-input"
+                                                    style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">
+                                                <option></option>
+                                            </select>
+                                            <div class="select-more-img" id="job-select">
+                                                <img src="Contents/Images/more.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2221,7 +2286,8 @@
                                 </div>
                                 <div class="div-form-input form-check">
                                     <div class="label-input"></div>
-                                    <span class="unchecked"></span> Tham gia công đoàn
+                                    <span class="unchecked"></span>
+                                    <span style="margin: 9px 5px">Tham gia công đoàn</span>
                                 </div>
                                 <label><strong>Số ngày phép được hưởng</strong></label>
                                 <div class="div-form-input" style="margin-top: 15px;">
@@ -2238,7 +2304,8 @@
                                 </div>
                                 <div class="div-form-input form-check">
                                     <div class="label-input"></div>
-                                    <span class="unchecked"></span> Tự động tăng phép theo thâm niên
+                                    <span class="unchecked"></span>
+                                    <span style="margin: 9px 5px">Tự động tăng phép theo thâm niên</span>
                                 </div>
                             </div>
                             <div class="G-I-body-sal-right">
@@ -2288,7 +2355,8 @@
                                 </div>
                                 <div class="div-form-input form-have-btn-checked">
                                     <div class="label-input"></div>
-                                    <span class="unchecked"></span> Chỉ hiển thị năm sinh trên các báo cáo bảo hiểm
+                                    <span class="unchecked"></span>
+                                    <span style="margin: 9px 5px"> Chỉ hiển thị năm sinh trên các báo cáo bảo hiểm </span>
                                 </div>
                             </div>
                         </div>
@@ -2304,7 +2372,7 @@
                             </tr>
                             <tr>
                                 <th>
-                                    <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                    <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-right: 0px;">
                                         <tr>
                                             <th class="employee-info-select-content">
                                                 <div class="employee-info-select-ion">*</div>
@@ -2321,14 +2389,14 @@
                                                     <div>Tùy chọn</div>
                                                 </div>
                                             </th>
-                                            <th><input style="width: 68px;" type="text" class="employee-info-noborder" /></th>
+                                            <th><input style="width: 69px;" type="text" class="employee-info-noborder" /></th>
                                             <th><div class="employee-info-down-ion"></div></th>
                                         </tr>
                                     </table>
 
                                 </th>
                                 <th>
-                                    <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                    <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-right: 0px;">
                                         <tr>
                                             <th class="employee-info-select-content">
                                                 <div class="employee-info-select-ion">*</div>
@@ -2356,49 +2424,90 @@
                         <table id="table-info-all-employees1" class="employee-info-tablecell" cellpadding="0" cellspacing="0">
                             <colgroup>
                                 <col style="width:121px">
-                                <col style="width:172px">
+                                <col style="width:173px">
                             </colgroup>
 
                             <tr class="tuan-anh-pointer" id="table-info-all-employees1-line1">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00772" style="border-top: 0px ">NVTCT00772</th>
+                                <th class="employee-info-box text-left" title="Bùi Như Nấm" style="border-top: 0px ">Bùi Như Nấm </th>
                             </tr>
                             <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line2">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00773">NVTCT00773</th>
+                                <th class="employee-info-box text-left" title="Trần Trung Hiếu">Trần Trung Hiếu </th>
                             </tr>
                             <tr class="tuan-anh-pointer" id="table-info-all-employees1-line3">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00774">NVTCT00774</th>
+                                <th class="employee-info-box text-left" title="Phan Văn Đức">Phan Văn Đức </th>
                             </tr>
                             <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line4">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00775">NVTCT00775</th>
+                                <th class="employee-info-box text-left" title="Bùi Như Huệ">Bùi Như Huệ</th>
                             </tr>
                             <tr class="tuan-anh-pointer" id="table-info-all-employees1-line5">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00776">NVTCT00776</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Đình Hiếu">Nguyễn Đình Hiếu </th>
                             </tr>
                             <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line6">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00777">NVTCT00777</th>
+                                <th class="employee-info-box text-left" title="Đỗ Thanh Tâm">Đỗ Thanh Tâm</th>
                             </tr>
                             <tr class="tuan-anh-pointer" id="table-info-all-employees1-line7">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00778">NVTCT00778</th>
+                                <th class="employee-info-box text-left" title="Võ Văn Thanh">Võ Văn Thanh</th>
                             </tr>
                             <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line8">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00779">NVTCT00779</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Thị Hoa">Nguyễn Thị Hoa</th>
                             </tr>
                             <tr class="tuan-anh-pointer" id="table-info-all-employees1-line9">
-                                <th class="employee-info-box title=" NVTCT00772"">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title=" NVTCT00780">NVTCT00780</th>
+                                <th class="employee-info-box text-left" title="Bùi Như Thanh">Bùi Như Thanh </th>
                             </tr>
                             <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line10">
-                                <th class="employee-info-box" title="NVTCT00772">NVTCT00772</th>
-                                <th class="employee-info-box" title="Bùi Như Nấm">Bùi Như Nấm>Bùi Như Nấm </th>
+                                <th class="employee-info-box" title="NVTCT00781">NVTCT00781</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Như Hà">Nguyễn Như Hà </th>
                             </tr>
+                            <tr class="tuan-anh-pointer" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00782">NVTCT00782</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Văn Hải">Nguyễn Văn Hải </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00783">NVTCT00783</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Như Phong">Nguyễn Như Phương </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00784">NVTCT00784</th>
+                                <th class="employee-info-box text-left" title="Trần Văn Thắng">Trần Văn Thắng </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00785">NVTCT00785</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Hưng Nhật">Nguyễn Hưng Nhật </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00786">NVTCT00786</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Như Hà">Nguyễn Như Hà </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00787">NVTCT00787</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Thanh Hải">Nguyễn Thanh Hải </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00788">NVTCT00788</th>
+                                <th class="employee-info-box text-left" title="Tống Như Tường">Tống Như Tường </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00789">NVTCT00789</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Đình Kiên">Nguyễn Đình Kiên </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00790">NVTCT00790</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Như Xuân">Nguyễn Như Xuân </th>
+                            </tr>
+                            <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees1-line10">
+                                <th class="employee-info-box" title="NVTCT00791">NVTCT00791</th>
+                                <th class="employee-info-box text-left" title="Nguyễn Như Hòa">Nguyễn Như Hòa </th>
+                            </tr>
+
                         </table>
                         <div id="table-info-all-employees20">
                             <table id="table-info-all-employees21" cellpadding="0" cellspacing="0">
@@ -2418,7 +2527,7 @@
                                     </tr>
                                     <tr class="background1">
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;height: 33px">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">=</div>
@@ -2439,7 +2548,7 @@
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">=</div>
@@ -2453,14 +2562,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 77px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 79px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2477,14 +2586,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 81px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 82px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2501,14 +2610,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 150px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 151px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2532,7 +2641,7 @@
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2549,14 +2658,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 162px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 164px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2573,14 +2682,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 158px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 159px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2597,14 +2706,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 63px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 64px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2621,14 +2730,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 77px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 78px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2645,14 +2754,14 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 146px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 147px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
 
                                         </th>
                                         <th>
-                                            <table class="employee-info-box" cellpadding="0" cellspacing="0">
+                                            <table class="employee-info-box" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
                                                 <tr>
                                                     <th class="employee-info-select-content">
                                                         <div class="employee-info-select-ion">*</div>
@@ -2669,7 +2778,7 @@
                                                             <div>Tùy chọn</div>
                                                         </div>
                                                     </th>
-                                                    <th><input style="width: 95px;" type="text" class="employee-info-noborder" /></th>
+                                                    <th><input style="width: 96px;" type="text" class="employee-info-noborder" /></th>
                                                     <th><div class="employee-info-down-ion"></div></th>
                                                 </tr>
                                             </table>
@@ -2677,7 +2786,7 @@
                                         </th>
                                 </thead>
                             </table>
-                            <table id="table-info-all-employees2" class="employee-info-tablecell" cellpadding="0" cellspacing="0">
+                            <table id="table-info-all-employees2" class="employee-info-tablecell" cellpadding="0" cellspacing="0" style="border-right: 0px;border-top: 0px;border-bottom: 0px;">
 
                                 <colgroup>
                                     <col style="width:79px">
@@ -2692,7 +2801,7 @@
                                     <col style="width:198px">
                                     <col style="width:130px">
                                 </colgroup>
-                                </tr>
+
                                 <tr class="tuan-anh-pointer" id="table-info-all-employees2-line1">
                                     <th class="employee-info-box" title="Nam"><div style="width: 79px;">Nam</div></th>
                                     <th class="employee-info-box" title="15/06/1994"><div style="width: 130px;">15/06/1994</div></th>
@@ -2733,7 +2842,7 @@
                                     <th class="employee-info-box" title="">Đang làm việc</th>
                                 </tr>
                                 <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line4">
-                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="Nữ">Nữ</th>
                                     <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
                                     <th class="employee-info-box" title="Đại học">Đại học</th>
                                     <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
@@ -2759,7 +2868,7 @@
                                     <th class="employee-info-box" title="">Đang làm việc</th>
                                 </tr>
                                 <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line6">
-                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="Nữ">Nữ</th>
                                     <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
                                     <th class="employee-info-box" title="Đại học">Đại học</th>
                                     <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
@@ -2785,7 +2894,7 @@
                                     <th class="employee-info-box" title="">Đang làm việc</th>
                                 </tr>
                                 <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line8">
-                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="Nữ">Nữ</th>
                                     <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
                                     <th class="employee-info-box" title="Đại học">Đại học</th>
                                     <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
@@ -2823,11 +2932,140 @@
                                     <th class="employee-info-box" title=""></th>
                                     <th class="employee-info-box" title="">Đang làm việc</th>
                                 </tr>
-
+                                <tr class="tuan-anh-pointer" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nữ">Nữ</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nữ">Nữ</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nữ">Nữ</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nam">Nam</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
+                                <tr class="tuan-anh-pointer table-info-all-employees-backgound" id="table-info-all-employees2-line2">
+                                    <th class="employee-info-box" title="Nữ">Nữ</th>
+                                    <th class="employee-info-box" title="15/06/1994">15/06/1994</th>
+                                    <th class="employee-info-box" title="Đại học">Đại học</th>
+                                    <th class="employee-info-box" title="Học viện tài chính">Học viện tài chính</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="Nhân viên hành chính">Nhân viên hành chính</th>
+                                    <th class="employee-info-box" title="Công ty cổ phần Misa">Công ty cổ phần Misa</th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title=""></th>
+                                    <th class="employee-info-box" title="">Đang làm việc</th>
+                                </tr>
                             </table>
                         </div>
                         <div id="employee-info-table-footer">
-                            <div class="employee-info-inline">Tổng số:278 bản ghi</div>
+                            <div class="employee-info-inline">Tổng số: 19 bản ghi</div>
                             <div id="employee-info-table-all-button-control" class="employee-info-inline employee-info-table-all-button info-all-employee-tuan-anh-pointer"></div>
                         </div>
                     </div>
@@ -2861,6 +3099,7 @@
                             <div id="show-info-toolbar-icon" class="employee-info-inline"></div>
                             <div id="show-info-toolbar-detail">
                                 <div id="show-info-left-col" class="employee-info-inline">
+                                    <div id="show-info-toolbar-detail-Litem2" class="show-info-toolbar-detail-Litem2">1. THÔNG TIN CHUNG</div>
                                     <div id="show-info-toolbar-detail-Litem2" class="show-info-toolbar-detail-Litem2">2. THÔNG TIN LIÊN HỆ</div>
                                     <div id="show-info-toolbar-detail-Litem3" class="show-info-toolbar-detail-Litem2">3. GIA ĐÌNH</div>
                                     <div id="show-info-toolbar-detail-Litem4" class="show-info-toolbar-detail-Litem2">4. HỢP ĐỒNG LAO ĐỘNG</div>
@@ -2877,6 +3116,7 @@
                                     <div id="show-info-toolbar-detail-Litem12" class="show-info-toolbar-detail-Litem2">15. ĐÁNH GIÁ</div>
                                 </div>
                                 <div id="show-info-right-col" class="employee-info-inline">
+                                    <div id="show-info-toolbar-detail-Ritem1" class="show-info-toolbar-detail-Litem2">16. QUÁ TRÌNH ĐÀO TẠO</div>
                                     <div id="show-info-toolbar-detail-Ritem1" class="show-info-toolbar-detail-Litem2">17. BẰNG CẤP</div>
                                     <div id="show-info-toolbar-detail-Ritem2" class="show-info-toolbar-detail-Litem2">18. CHỨNG CHỈ</div>
                                     <div id="show-info-toolbar-detail-Ritem3" class="show-info-toolbar-detail-Litem2">19. KINH NGHIỆM LÀM VIỆC</div>
@@ -3038,7 +3278,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </div>
     </div>
     <!-- box-for-input -->
@@ -4612,7 +4852,10 @@
     </div>
     <!-- finish-box -->
 
+    <div id="table"></div>
+
     <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/data-country.js"></script>
     <script src="Scripts/index.js"></script>
     <script src="Scripts/home.js"></script>
     <script src="Scripts/amis.js"></script>
