@@ -16,30 +16,42 @@
                 <div class="icon-ar-right"></div>
                 <div class="after-file">Hồ sơ</div>
             </div>
+
+            <!--Đây là phần t sửa đến dòng 56 nhé-->
             <div class="right-misa-pannel  inline">
                 <div class="vertical-line-misapannel"></div>
                 <div class="right-left">
-                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
-                    <datalist id="bophans" name="bophan">
-                        <option value="Công ty Cổ phần MISA">
-                        <option value="Phòng hành chính tổng hợp">
-                        <option value="Trung tâm phát triển phần mềm">
-                    </datalist>
-                    <!--<option class="inactive-checkbox  inline"
-                        <input type="checkbox" />
-                        Hiển thị cơ cấu tổ chức đã ngừng theo dõi
-                    >-->
+                    <div class="inline">
+                        <input class="input-filter  search-box" placeholder="Công ty Cổ phần MISA" onkeyup="filterFunction()" >
+                        <div class="arr-dropdown"></div>
+                    </div>
+                    <div class="dropdown-content">                       
+                        <ul class="dropdown-content-ul">
+                            <li style="margin-left:-45px;">
+                                <ul class="contentfilter">
+                                    <li class="CTCPMS" value="Công ty Cổ phần MISA"><a>Công ty Cổ phần MISA</a></li>
+                                    <li value="Phòng hành chính tổng hợp"><a>Phòng hành chính tổng hợp</a></li>
+                                    <li value="Trung tâm phát triển phần mềm"><a>Tung tâm phát triển phần mềm</a></li>
+                                </ul>
+                            </li>
+                            <li class="checkbox-filter" >
+                                <input type="checkbox" />
+                                Hiển thị cơ cấu tổ chức đã ngừng theo dõi
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
                 <div class="vertical-line-misapannel"></div>
-                <div>
-                    <select id="" class="right-right">
-                        <option>Tất cả</option>
-                        <option>Đang làm việc</option>
-                        <option>Đã nghỉ việc</option>
-                        <option>Đã kích hoạt tài khoản</option>
-                        <option>Chưa kích hoạt tài khoản</option>
-                    </select>
+                <div class="right-right">
+                    <input class="current-status"  placeholder="Đang làm việc" >
+                    <ul class="right-right-status">
+                        <li value="Tất cả">Tất cả</li>
+                        <li value="Đang làm việc">Đang làm việc</li>
+                        <li value="Đã nghỉ việc">Đã nghỉ việc</li>
+                        <li value="Đã kích hoạt tài khoản">Đã kích hoạt tài khoản</li>
+                        <li value="Chưa kích hoạt tài khoản">Chưa kích hoạt tài khoản</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -154,27 +166,41 @@
             <div class="right-misa-pannel  inline">
                 <div class="vertical-line-misapannel"></div>
                 <div class="right-left">
-                    <input class="search-box" list="bophans" placeholder="Công ty Cổ phần MISA">
-                    <datalist id="bophans" name="bophan">
-                        <option value="Công ty Cổ phần MISA">
-                        <option value="Phòng hành chính tổng hợp">
-                        <option value="Trung tâm phát triển phần mềm">
-                    </datalist>
+                    <div class="inline">
+                        <input class="input-filter  search-box" placeholder="Công ty Cổ phần MISA" onkeyup="filterFunction()">
+                        <div class="arr-dropdown"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul class="dropdown-content-ul">
+                            <li style="margin-left:-45px;">
+                                <ul class="contentfilter">
+                                    <li class="CTCPMS" value="Công ty Cổ phần MISA"><a>Công ty Cổ phần MISA</a></li>
+                                    <li value="Phòng hành chính tổng hợp"><a>Phòng hành chính tổng hợp</a></li>
+                                    <li value="Trung tâm phát triển phần mềm"><a>Tung tâm phát triển phần mềm</a></li>
+                                </ul>
+                            </li>
+                            <li class="checkbox-filter">
+                                <input type="checkbox" />
+                                Hiển thị cơ cấu tổ chức đã ngừng theo dõi
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
                 <div class="vertical-line-misapannel"></div>
-                <div>
-                    <select id="choose-contract" class="right-right">
-                        <option>Tất cả</option>
-                        <option>Hợp đồng đang có hiệu lực</option>
-                        <option>Hợp đồng sắp hết hạn học việc trong vòng 10 ngày</option>
-                        <option>Hợp đồng sắp hết hạn thử việc trong vòng 10 ngày</option>
-                        <option>Hợp đồng sắp hết hạn trong vòng 10 ngày</option>
-                        <option>Hợp đồng đang có hiệu lực và đã hết hạn</option>
-                        <option>Hợp đồng hết hiệu lực</option>
-                    </select>
+                <div class="right-right">
+                    <input class="current-status" placeholder="Đang làm việc">
+                    <ul class="right-right-status">
+                        <li value="Tất cả">Tất cả</li>
+                        <li value="Hợp đồng đang có hiệu lực">Hợp đồng đang có hiệu lực</li>
+                        <li value="Hợp đồng sắp hết hạn học việc trong vòng 10 ngày">Hợp đồng sắp hết hạn học việc trong vòng 10 ngày</li>
+                        <li value="Hợp đồng sắp hết hạn trong vòng 10 ngày">Hợp đồng sắp hết hạn trong vòng 10 ngày</li>
+                        <li value="Hợp đồng đang có hiệu lực và đã hết hạn">Hợp đồng đang có hiệu lực và đã hết hạn</li>
+                        <li value="Hợp đồng hết hiệu lực">Hợp đồng hết hiệu lực</li>
+                    </ul>
                 </div>
             </div>
+                
         </div>
         <div class="wrap-toolbar">
             <div class="toolbar">

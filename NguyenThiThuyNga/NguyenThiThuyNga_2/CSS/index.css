@@ -44,9 +44,9 @@
     position: absolute;
     right: 0px;
 }
-datalist{
+/*datalist{
     display:block;
-}
+}*/
 .search-box {
     border: none;
     width: 200px;
@@ -55,32 +55,108 @@ datalist{
     padding-left:25px;
     outline:none;
     /*height:28px;*/
+
 }
     .search-box::-webkit-input-placeholder{
         color:#000;
     }
-    /*#option-bophan{
-    position:absolute;
-}*/
-/*.right-left {
-    border: none;
-    border-left: 1px solid #dadada;
-    outline: none;
 
-}*/
-        .right-right {
-            border: none;
-            /*border-left:1px solid #dadada;*/
-            outline: none;
-            width: 154px;
-        }
-select.right-right, .right-right option{
-    /*height: 30px;*/
-}
-.inactive-checkbox{
+    /*Bắt đầu phần t sửa mới đến dòng 155*/
+.dropdown-content {
     display:none;
-    z-index:10;
+    width: 114%;
+    margin-left: -33px;
 }
+
+.arr-dropdown {
+    background-image: url('../Contents/Images/split-button-arrow.png');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 17px;
+}
+.dropdown-content-ul {
+    list-style-type: none;
+    margin-left:0px;
+    background-color:#fff;
+    border:0.5px solid #dadada;
+}
+.contentfilter {
+    list-style-type: none;
+}
+    .contentfilter li{
+        margin-left:-35px;
+        padding-left:20px;
+    }
+    .contentfilter li a {
+        width: 200px;
+        margin-top: -1px;
+        /*background-color: #f6f6f6;*/
+        padding: 12px;
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    .contentfilter li:hover{
+        background-color:#c1e0f5;
+    }
+    .CTCPMS {
+        background-image: url('../Contents/Images/ext.png');
+        background-repeat: no-repeat;
+        /*width:16px;
+    height:17px;*/
+        background-position: 10px 13px;
+        margin-left: -35px;
+        padding-left: 3px;
+        background-color: #acd8f5;
+    }
+.checkbox-filter {
+    margin-left: -40px;
+    display: flex;
+    background-color: #f6f6f6;
+    /*height:30px;*/
+    padding-top: 10px;
+    padding-bottom: 9px;
+    border: 0.5px solid #dadada;
+}
+
+.right-right {
+    margin-left:-11px;
+    padding-left:3px;
+}
+.current-status {
+    background-image: url('../Contents/Images/split-button-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: none;
+    outline: none;
+    width: 154px;
+    padding-right: 15px;
+    /*background: #fff;*/
+}
+
+.right-right-status {
+    background-color: #fff;
+    list-style-type: none;
+    margin-left:0px;
+    border:1px solid #dadada;
+    margin-top:7px;
+    margin-left:-3px;
+    display:none;
+}
+    .right-right-status li {
+        margin-left: -40px;
+        
+        padding-top:10px;
+        padding-bottom:8px;
+        padding-left:8px;
+    }
+        .right-right-status li:hover{
+            background-color:#c1e0f5;
+        }
+        .inactive-checkbox {
+            display: none;
+            z-index: 10;
+        }
 .misa-pannel-2{
     height:30px;
 }
