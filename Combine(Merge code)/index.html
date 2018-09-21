@@ -36,18 +36,18 @@
                     </div>
                 </li>
                 <li>
-                    <div class="menu-li menu-li-dropdown">
+                    <div class="menu-li menu-li-dropdown" status="show">
                         <div class="menu-icon menu-left">
                             <img src="Contents/Images/profile.png" />
                         </div>
                         <div class="menu-text menu-right">
                             Hồ sơ nhân viên
-                            <span class="icon-menu-dropdown"></span>
+                            <span class="icon-menu-dropup"></span>
                         </div>
                     </div>
-                    <ul>
+                    <ul style="display: block">
                         <li id="profile-item">
-                            <div class="menu-li-ul-li">
+                            <div class="menu-li-ul-li" style="background: #EDA235">
                                 <div class="menu-icon menu-left">
                                 </div>
                                 <div class="menu-text menu-right">
@@ -1034,9 +1034,9 @@
                                     <option value="Trung tâm phát triển phần mềm">
                                 </datalist>
                                 <!--<option class="inactive-checkbox  inline"
-                        <input type="checkbox" />
-                        Hiển thị cơ cấu tổ chức đã ngừng theo dõi
-                    >-->
+                                    <input type="checkbox" />
+                                    Hiển thị cơ cấu tổ chức đã ngừng theo dõi
+                                >-->
 
                             </div>
                             <div class="vertical-line-misapannel"></div>
@@ -1144,7 +1144,7 @@
                                 <div class="lable-reply-button-toolbar">Phản hồi</div>
                             </div>
                             <div class="vertical-line"></div>
-                            <div class="button-toolbar" title="Đóng">
+                            <div class="button-toolbar" title="Đóng" id="close-add-panel">
                                 <div class="icon-close-button-toolbar"></div>
                                 <div class="lable-close-button-toolbar">Đóng</div>
                             </div>
@@ -1561,8 +1561,11 @@
                 </div>
 
                 <div class="contents">
+
                     <div class="form-info">
+                        <!--Form Contact Infomation-->
                         <div class="form-contact-info">
+                            <!--Contact header information-->
                             <div class="head-contact-info">
                                 <div class="title-contact-info">
                                     2. Thông tin liên hệ
@@ -1570,7 +1573,10 @@
                                 <div class="hr">
                                 </div>
                             </div>
+                            <!--End Contact header information-->
+                            <!--Khối thông tin liên hệ trực tiếp(Khối dầu tiên)-->
                             <div class="first-block">
+                                <!--Khối bên trái-->
                                 <div class="block block-left">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1643,6 +1649,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--Khối bên phải-->
                                 <div class="block block-right">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1682,7 +1689,10 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!--Khối thứ 2-->
                             <div class="first-block second-block">
+                                <!--Khối bên trái-->
                                 <div class="block block-left">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1696,11 +1706,13 @@
                                         <div class="label-input">
                                             Tỉnh/Thành phố
                                         </div>
-                                        <div class="box-input">
+                                        <div class="box-input" id="box-input-city">
                                             <div class="input-select input-select-two">
                                                 <input type="text" />
                                                 <span class="icon-drop-option">
                                                 </span>
+                                            </div>
+                                            <div class="list-option list-option-city">
                                             </div>
                                         </div>
                                     </div>
@@ -1713,6 +1725,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--khối bên phải-->
                                 <div class="block block-right">
                                     <div class="row-input">
                                         <div class="label-input">
@@ -1748,7 +1761,10 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!--Khối nhập thông tin địa chỉ người dùng-->
                             <div class="first-block second-block" id="form-address">
+                                <!--Khối trái-->
                                 <div class="block block-left">
                                     <div class="row-input">
                                         <div class="title-block">
@@ -1828,99 +1844,107 @@
                                             Nơi sinh
                                         </div>
                                         <div class="box-input">
-                                            <textarea rows="3"></textarea>
+                                            <textarea rows="3" readonly title="Thông tin được tự động cập nhập từ các trường bên trên"></textarea>
                                         </div>
                                     </div>
                                 </div>
+                                <!--khối phải-->
                                 <div class="block block-right">
-                                    <div class="row-input">
-                                        <div class="label-input title-block">
-                                            Chỗ ở hiện nay
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="form-check">
-                                                <span class="unchecked"></span>
-                                                <div class="label-check">
-                                                    Giống hộ khẩu thường trú
+                                    <form id="form-address-right">
+                                        <div class="row-input">
+                                            <div class="label-input title-block">
+                                                Chỗ ở hiện nay
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="form-check">
+                                                    <span class="unchecked"></span>
+                                                    <div class="label-check">
+                                                        Giống hộ khẩu thường trú
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Quốc gia
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-three">
-                                                <input type="text" class="input-country" />
-                                                <span class="icon-drop-option">
-                                                </span>
-                                                <span class="icon-dot-vertical">
-                                                </span>
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Quốc gia
                                             </div>
-                                            <div class="list-option country">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Tỉnh/Thành phố
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-two">
-                                                <input type="text" class="input-region" />
-                                                <span class="icon-drop-option">
-                                                </span>
-                                            </div>
-                                            <div class="list-option region">
+                                            <div class="box-input">
+                                                <div class="input-select input-select-three">
+                                                    <input type="text" class="input-country" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                    <span class="icon-dot-vertical button-country">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option country">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Quận/Huyện
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-two">
-                                                <input type="text" class="input-city" />
-                                                <span class="icon-drop-option">
-                                                </span>
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Tỉnh/Thành phố
                                             </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Xã/Phường
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-two">
-                                                <input type="text" class="input-wards" />
-                                                <span class="icon-drop-option">
-                                                </span>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-two">
+                                                    <input type="text" class="input-region" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option region">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input-long">
-                                            Số nhà/Đường phố/Thôn xóm
-                                        </div>
-                                        <div class="box-input">
-                                            <div class="input-select input-select-one">
-                                                <input type="text" class="input-village" />
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Quận/Huyện
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-two">
+                                                    <input type="text" class="input-city" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option city">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row-input">
-                                        <div class="label-input">
-                                            Nơi sinh
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Xã/Phường
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-two">
+                                                    <input type="text" class="input-wards" />
+                                                    <span class="icon-drop-option">
+                                                    </span>
+                                                </div>
+                                                <div class="list-option wards">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="box-input">
-                                            <textarea rows="3"></textarea>
+                                        <div class="row-input">
+                                            <div class="label-input-long">
+                                                Số nhà/Đường phố/Thôn xóm
+                                            </div>
+                                            <div class="box-input">
+                                                <div class="input-select input-select-one">
+                                                    <input type="text" class="input-village" />
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="row-input">
+                                            <div class="label-input">
+                                                Nơi sinh
+                                            </div>
+                                            <div class="box-input">
+                                                <textarea rows="3" readonly title="Thông tin được tự động cập nhập từ các trường bên trên"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
+
+                            <!--Khối thông tin liên hệ khẩn cấp-->
                             <div class="first-block second-block last-block">
                                 <div class="block block-left">
                                     <div class="row-input">
@@ -1997,6 +2021,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--End contact infomation-->
                     </div>
                 </div>
 
@@ -2178,7 +2203,7 @@
                                     <div class="div-form-input">
                                         <div class="label-input">Lý do nghỉ</div>
                                         <div class="select-more">
-                                            <select name="" class="form-input" 
+                                            <select name="" class="form-input"
                                                     style="border-top-right-radius:0px;border-bottom-right-radius: 0px;">
                                                 <option></option>
                                                 <option>Áp lực công việc quá lớn</option>
@@ -2261,7 +2286,7 @@
                                 </div>
                                 <div class="div-form-input form-check">
                                     <div class="label-input"></div>
-                                    <span class="unchecked"></span> 
+                                    <span class="unchecked"></span>
                                     <span style="margin: 9px 5px">Tham gia công đoàn</span>
                                 </div>
                                 <label><strong>Số ngày phép được hưởng</strong></label>
@@ -2279,7 +2304,7 @@
                                 </div>
                                 <div class="div-form-input form-check">
                                     <div class="label-input"></div>
-                                    <span class="unchecked"></span> 
+                                    <span class="unchecked"></span>
                                     <span style="margin: 9px 5px">Tự động tăng phép theo thâm niên</span>
                                 </div>
                             </div>
@@ -2330,7 +2355,7 @@
                                 </div>
                                 <div class="div-form-input form-have-btn-checked">
                                     <div class="label-input"></div>
-                                    <span class="unchecked"></span> 
+                                    <span class="unchecked"></span>
                                     <span style="margin: 9px 5px"> Chỉ hiển thị năm sinh trên các báo cáo bảo hiểm </span>
                                 </div>
                             </div>
@@ -3253,7 +3278,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </div>
     </div>
     <!-- box-for-input -->
@@ -4827,7 +4852,10 @@
     </div>
     <!-- finish-box -->
 
+    <div id="table"></div>
+
     <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/data-country.js"></script>
     <script src="Scripts/index.js"></script>
     <script src="Scripts/home.js"></script>
     <script src="Scripts/amis.js"></script>

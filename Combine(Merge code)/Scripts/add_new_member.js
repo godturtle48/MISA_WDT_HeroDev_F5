@@ -38,12 +38,6 @@
         $(this).toggleClass('unchecked');
     });
 
-    // toggle checkbox
-    $('.form-have-btn-checked').children('.checked, .unchecked').click(function () {
-        $(this).toggleClass('checked');
-        $(this).toggleClass('unchecked');
-    });
-
     // toggle select option
     $('.box-input').children('.input-select-two, .input-select-three').children('.icon-drop-option').click(function () {
         $(this).parent().siblings('.list-option').toggle();
@@ -62,9 +56,32 @@
         }
     });
 
+    // hiện madal 
     $('.button-country').click(function () {
+        $(this).addClass('processing');
+        $("#table").load("Views/table-country.html", function () {
+
+            $(".btn-close").click(function () {
+                $('.processing').removeClass('processing');
+                $('#table').empty();
+            });
+            $(".button-close-madal").click(function () {
+                $('.processing').removeClass('processing');
+                $('#table').empty();
+            });
+        });
+    });
+
+    // hiện madal 
+    $('.button-relationship').click(function () {
+        $(this).addClass('processing');
         $("#table").load("Views/table-relationship.html", function () {
             $(".btn-close").click(function () {
+                $('.processing').removeClass('processing');
+                $('#table').empty();
+            });
+            $(".button-close-madal").click(function () {
+                $('.processing').removeClass('processing');
                 $('#table').empty();
             });
         });

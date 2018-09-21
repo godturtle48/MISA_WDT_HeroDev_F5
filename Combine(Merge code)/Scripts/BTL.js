@@ -17,7 +17,7 @@ $('#employee-info-table-all-button-control').click(function () {
     }
     else{
         $('#employee-general-info').hide();
-        $('#table-info-all-employees').css('height', 'calc(100% - 20px)');
+        $('#table-info-all-employees').css('height', 'calc(100% - 10px)');
         $('#employee-info-table-all-button-control').addClass('employee-info-table-all-button2');
         $('#employee-info-table-all-button-control').removeClass('employee-info-table-all-button');
         $('#table-info-all-employees20').css('bottom', 'calc(100% - 27px)');

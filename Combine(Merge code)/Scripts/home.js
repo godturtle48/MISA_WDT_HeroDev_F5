@@ -11,6 +11,9 @@ $('#icon-left-header').click(function () {
     $('.setting-dialog').css('display', 'none');
     $('.triangle').css('display', 'none');
     $('.catalog-application-catalog').css('display', 'none');
+    $('.type1-sub-menu').hide();
+    $('.type2-sub-menu').hide();
+    $('.type3-sub-menu').hide();
     //
 
     if (check % 2 == 0) {
@@ -63,8 +66,6 @@ $('.menu-li-dropdown').click(function () {
         $(this).attr('status', 'show');
         $(this).find('span').removeClass("icon-menu-dropdown");
         $(this).find('span').addClass("icon-menu-dropup");
-
-        debugger;
     } else {
         $(this).next().stop().slideUp(300);
         $(this).removeAttr('status');
@@ -312,7 +313,7 @@ $('.system').click(function () {
     $('.list-sub-menu').hide();
 })
 
-$('#profile-item').click(function () {
+$('#profile-item, #close-add-panel').click(function () {
     $('.building-alert').hide();
     $('.box-title').show();
     $('#profile-panel').show();

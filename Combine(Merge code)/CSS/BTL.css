@@ -6,7 +6,7 @@
     background: #ECF0F2;
     font-size: 13px;
     width: calc(100vw - 250px);
-    height: calc(100vh - 117px);
+    height: calc(100vh - 136px);
 }
 .info-all-employee-tuan-anh-pointer:hover{
     cursor: pointer;
@@ -14,7 +14,7 @@
 
 #employee-general-info {
     background: white;
-    height: 248px;
+    height: 260px;
     margin: 0px;
     min-width:780px;
     position: relative;

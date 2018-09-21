@@ -1,20 +1,32 @@
 ﻿$('.setting-search').click(function() {
 	$('.setting-dialog').slideToggle(300);
 	$('.triangle').slideUp(200);
-	$('.catalog-application-catalog').slideUp(200);
+    $('.catalog-application-catalog').slideUp(200);
+    $('.type1-sub-menu').hide();
+    $('.type2-sub-menu').hide();
+    $('.type3-sub-menu').hide();
 });
 
 $('.img-catalog-app').click(function () {
 	$('.triangle').slideToggle(200);
 	$('.catalog-application-catalog').slideToggle(200);
-	$('.setting-dialog').slideUp(200);
+    $('.setting-dialog').slideUp(200);
+    $('.type1-sub-menu').hide();
+    $('.type2-sub-menu').hide();
+    $('.type3-sub-menu').hide();
 });
 $('.r-user').click(function () {
-	$('.r-user-profile').slideToggle(150);
+    $('.r-user-profile').slideToggle(150);
+    $('.type1-sub-menu').hide();
+    $('.type2-sub-menu').hide();
+    $('.type3-sub-menu').hide();
 });
 
 $('#ip-search').focus(function () {
-	$('#ip-search').css('border', '0px');
+    $('#ip-search').css('border', '0px');
+    $('.type1-sub-menu').hide();
+    $('.type2-sub-menu').hide();
+    $('.type3-sub-menu').hide();
 });
 
 
