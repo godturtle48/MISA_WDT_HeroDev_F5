@@ -1,4 +1,4 @@
-$('.setting-search').click(function() {
+﻿$('.setting-search').click(function() {
 	$('.setting-dialog').slideToggle(300);
 	$('.triangle').slideUp(200);
 	$('.catalog-application-catalog').slideUp(200);
@@ -99,3 +99,33 @@ $('#number-down-ratio').click(function () {
 $('#upfile').click(function () {
     $('#file-up').trigger('click');
 });
+
+$('#excuse').click(function () {
+    var excuse = $('#excuse').val();
+    switch (excuse) {
+        case "Đang làm thủ tục thôi việc":
+            $('.absent-excuse').show();
+            break;
+        case "Đình chỉ công tác":
+            $('.absent-excuse').show();
+            break;
+        case "Nghỉ hưu":
+            $('.absent-excuse').show();
+            break;
+        case "Nghỉ việc":
+            $('.absent-excuse').show();
+            break;
+        case "Nghỉ khác":
+            $('.absent-excuse').show();
+            break;
+        case "Mất việc làm":
+            $('.absent-excuse').show();
+            break;
+        case "Sa thải":
+            $('.absent-excuse').show();
+            break;
+        default:
+            $('.absent-excuse').hide();
+    }
+});
+

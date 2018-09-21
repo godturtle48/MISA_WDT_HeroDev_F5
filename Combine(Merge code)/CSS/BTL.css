@@ -5,7 +5,7 @@
     left: 0px;
     background: #ECF0F2;
     font-size: 13px;
-    width: calc(100vw - 240px);
+    width: calc(100vw - 250px);
     height: calc(100vh - 117px);
 }
 .info-all-employee-tuan-anh-pointer:hover{
@@ -157,7 +157,7 @@
     width: 570px;
     box-shadow: 2px 5px 5px #888888;
     position:absolute;
-    top:-360px;
+    top:-350px;
     right:3px;
     z-index: 14;
 }
@@ -283,6 +283,7 @@
     height:32px;
     width:30px;
     background-repeat:no-repeat;
+    cursor: pointer;
 }
 #setting-toolbar-info-detail-upBT {
     position: relative;
@@ -365,11 +366,11 @@
 }
 #table-info-all-employees{
     width:100%;
-    height: 266px;  
-    background: white;                        /*neu muon chinh chieu cao thi chinh o day de chanh bi loi*/
+    height: calc(100% - 265px);              /*neu muon chinh chieu cao thi chinh o day neu bi lech*/
+    background: white;                        
 }
 #table-info-all-employees2 {
-    height: 173px;     
+    height: calc(100% - 93px);    
     margin-bottom: -4px; 
     overflow: scroll;
     margin-left: -4px;
@@ -380,8 +381,9 @@
     display: table-cell;
 }
 #table-info-all-employees20{
+	height: 100%;
     position: relative;
-    bottom: 239px;
+    bottom: calc(100% - 27px);
     left: 298px;
 }
 #table-info-all-employees21 {    
@@ -425,7 +427,7 @@
     border: 1px solid #CFCFCF;
     background: white;
     position: relative;
-    bottom: 241px;
+    bottom: 100%;
 
 }
 .employee-info-table-all-button{
