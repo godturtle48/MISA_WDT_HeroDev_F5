@@ -8,21 +8,21 @@ $('#table-info-all-employees2').scroll(function () {
 $('#employee-info-table-all-button-control').click(function () {
     if ($('#employee-general-info').css('display') === 'none') {
         $('#employee-general-info').show();
-        $('#table-info-all-employees').css('height', '266px');
+        $('#table-info-all-employees').css('height', 'calc(100% - 265px)');
         $('#employee-info-table-all-button-control').removeClass('employee-info-table-all-button2');
         $('#employee-info-table-all-button-control').addClass('employee-info-table-all-button');
-        $('#table-info-all-employees20').css('bottom', '241px');
-        $('#employee-info-table-footer').css('bottom', '241px');
-        $('#table-info-all-employees2').css('height', '173px');
+        $('#table-info-all-employees20').css('bottom', 'calc(100% - 27px)');
+        $('#employee-info-table-footer').css('bottom', '100%');
+        $('#table-info-all-employees2').css('height', 'calc(100% - 93px)');
     }
     else{
         $('#employee-general-info').hide();
-        $('#table-info-all-employees').css('height', '516px');
+        $('#table-info-all-employees').css('height', 'calc(100% - 20px)');
         $('#employee-info-table-all-button-control').addClass('employee-info-table-all-button2');
         $('#employee-info-table-all-button-control').removeClass('employee-info-table-all-button');
-        $('#table-info-all-employees20').css('bottom', '491px');
-        $('#employee-info-table-footer').css('bottom', '491px');
-        $('#table-info-all-employees2').css('height', '424px');
+        $('#table-info-all-employees20').css('bottom', 'calc(100% - 27px)');
+        $('#employee-info-table-footer').css('bottom', '100%');
+        $('#table-info-all-employees2').css('height', 'calc(100% - 93px)');
     }
 });
 $('#show-info-toolbar-icon').click(function () {
@@ -35,12 +35,21 @@ $('#show-info-toolbar-icon').click(function () {
 
     }
 });
+$('#icon-left-header').click(function () {
+    if ($('.menu-right').css('display') === 'none') {
+        $('#info-all-employee-tuan-anh').css('width', 'calc(100vw - 50px)'); 
+    }
+    else {
+        $('#info-all-employee-tuan-anh').css('width', 'calc(100vw - 250px)'); 
+
+    }
+});
 
 
 $('#setting-toolbar-info-detail-icon').click(function () {
     if ($('#setting-toolbar-info-detail-content').css('display') === 'none') {
         $('#setting-toolbar-info-detail-content').show();
-
+        $('#show-info-toolbar-detail').hide();
     }
     else {
         $('#setting-toolbar-info-detail-content').hide();

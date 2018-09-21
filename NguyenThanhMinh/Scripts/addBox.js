@@ -18,8 +18,14 @@ $('[requiredInput="true"]').blur( function () {
 $('#job-position').click(function () {
 	$('#box-job-position').css('display','block');
 });
+$('#job-position-2').click(function () {
+    $('#box-job-position').css('display', 'block');
+});
 $('#work-unit').click(function () {
 	$('#box-work-unit').css('display','block');
+});
+$('#work-unit-2').click(function () {
+    $('#box-work-unit').css('display', 'block');
 });
 $('#degree-training').click(function () {
 	$('#box-degree-training').css('display','block');

@@ -5,9 +5,8 @@
     left: 0px;
     background: #ECF0F2;
     font-size: 13px;
-    width: calc(100vw - 240px);
+    width: calc(100vw - 250px);
     height: calc(100vh - 117px);
-    display: none;
 }
 .info-all-employee-tuan-anh-pointer:hover{
     cursor: pointer;
@@ -19,7 +18,7 @@
     margin: 0px;
     min-width:780px;
     position: relative;
-    top: 0px;
+    top: -3px;
     border:1px solid #CFCFCF;
     box-shadow:3px 3px 3px #CFCFCF;
 
@@ -112,40 +111,44 @@
     align-items:center;
 }
 .employee-info-down-ion{
-    background-image: url('Contents/Images/cbo-trigger.png');
+    background-image: url('../Contents/Images/cbo-trigger.png');
     height:20px;
     width:20px;
     background-repeat:no-repeat;
     background-position: 8px 7px;
 }
 #employee-info-left-icon {
-    background-image: url('Contents/Images/tab-arr-left-disable.png');
+    background-image: url('../Contents/Images/tab-arr-left-disable.png');
     height:20px;
     width:20px;
     background-repeat:no-repeat;
     background-position: 5px 0px;
+    cursor: pointer;
 }
 #employee-info-right-icon {
-    background-image: url('Contents/Images/tab-arr-right.png');
+    background-image: url('../Contents/Images/tab-arr-right.png');
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
     background-position: 5px 0px;
+    cursor: pointer;
 }
 
 #show-info-toolbar-icon {
-    background-image: url('Contents/Images/quick-link.png');
+    background-image: url('../Contents/Images/quick-link.png');
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
     background-position: 0px 4px;
+    cursor: pointer;
 }
 #setting-toolbar-info-detail-icon {
-    background-image: url('Contents/Images/setting.png');
+    background-image: url('../Contents/Images/setting.png');
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
     background-position: 0px -1px;
+    cursor: pointer;
 }
 #show-info-toolbar-detail {
     display:none;
@@ -154,7 +157,7 @@
     width: 570px;
     box-shadow: 2px 5px 5px #888888;
     position:absolute;
-    top:-338px;
+    top:-350px;
     right:3px;
     z-index: 14;
 }
@@ -163,7 +166,7 @@
 }
 #show-info-right-col {
     position: relative;
-    top: -17px;
+    top: -27px;
 }
 .show-info-toolbar-detail-Litem2{
     line-height:24px;
@@ -204,6 +207,7 @@
     position:relative;
     margin-top: 0px;
     text-align: left;
+    top:-85px;        /* them cai nay de day bang len tai t cho no relative tu dau roi ngai sua lam sory :))*/;
     
 }
 #cmnd-employee-info {
@@ -213,7 +217,7 @@
     font-size: 13px;
 }
 #menu-employee-info-detail{
-    overflow-x:hidden;
+    overflow:hidden;
     width:calc(100% - 100px);
 }
 .employee-info-toolbar-item{
@@ -259,7 +263,7 @@
 #table-info-all-employees .employee-info-box{
     height: 32px;
     line-height: 32px;
-    padding: 0px;
+    
 }
 #setting-toolbar-info-detail-header {
     position:relative;
@@ -273,19 +277,20 @@
 }
 #setting-toolbar-info-detail-closeBt {
     position:relative;
-    top:-40px;
+    top:-25px;
     left:550px;
-    background-image: url('Contents/Images/window-close16.png');
+    background-image: url('../Contents/Images/window-close16.png');
     height:32px;
     width:30px;
     background-repeat:no-repeat;
+    cursor: pointer;
 }
 #setting-toolbar-info-detail-upBT {
     position: relative;
     top: -235px;
     border: 1px solid #CFCFCF;
     display: block;
-    background-image: url('Contents/Images/up16.png');
+    background-image: url('../Contents/Images/up16.png');
     background-repeat: no-repeat;
     height: 36px;
     width: 30px;
@@ -296,7 +301,7 @@
     top: -230px;
     border: 1px solid #CFCFCF;
     display: block;
-    background-image: url('Contents/Images/down16.png');
+    background-image: url('../Contents/Images/down16.png');
     background-repeat: no-repeat;
     height: 36px;
     background-position: 7px 8px;
@@ -308,7 +313,7 @@
 }
 #setting-toolbar-info-help-BT {
     border: 1px solid #CFCFCF;
-    background-image: url('Contents/Images/question16.png');
+    background-image: url('../Contents/Images/question16.png');
     background-repeat: no-repeat;
     height: 30px;
     background-position: 7px 8px;
@@ -329,7 +334,7 @@
     line-height: 30px;
 }
 #setting-toolbar-info-BT2 {
-    background-image: url('Contents/Images/select16.png');
+    background-image: url('../Contents/Images/select16.png');
     border: 1px solid #CFCFCF;
     height: 30px;
     width: 53px;
@@ -343,7 +348,7 @@
 #setting-toolbar-info-BT3 {
     width: 53px;
     padding-left: 30px;
-    background-image: url('Contents/Images/close16.png');
+    background-image: url('../Contents/Images/close16.png');
     border: 1px solid #CFCFCF;
     height: 30px;
     text-align: center;
@@ -361,11 +366,11 @@
 }
 #table-info-all-employees{
     width:100%;
-    height: 266px;  
-    background: white;                        /*neu muon chinh chieu cao thi chinh o day de chanh bi loi*/
+    height: calc(100% - 265px);              /*neu muon chinh chieu cao thi chinh o day neu bi lech*/
+    background: white;                        
 }
 #table-info-all-employees2 {
-    height: 173px;     
+    height: calc(100% - 93px);    
     margin-bottom: -4px; 
     overflow: scroll;
     margin-left: -4px;
@@ -376,8 +381,9 @@
     display: table-cell;
 }
 #table-info-all-employees20{
+	height: 100%;
     position: relative;
-    bottom: 241px;
+    bottom: calc(100% - 27px);
     left: 298px;
 }
 #table-info-all-employees21 {    
@@ -421,14 +427,14 @@
     border: 1px solid #CFCFCF;
     background: white;
     position: relative;
-    bottom: 241px;
+    bottom: 100%;
 
 }
 .employee-info-table-all-button{
     border: 1px solid #CFCFCF;
     height: 9px;
     width: 60px;
-    background:  url('Contents/Images/arr-down.png');
+    background:  url('../Contents/Images/arr-down.png');
     background-repeat: no-repeat;
     background-position: 20px -4px;
     position: relative;
@@ -439,10 +445,15 @@
     border: 1px solid #CFCFCF;
     height: 9px;
     width: 60px;
-    background: url('Contents/Images/arr-up.png');
+    background: url('../Contents/Images/arr-up.png');
     background-repeat: no-repeat;
     background-position: 20px -4px;
     position: relative;
     left: calc(50% - 100px);
     top: 9px;
+}
+
+.text-left {
+    text-align: left;
+    padding-left: 10px;
 }
